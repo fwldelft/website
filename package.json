@@ -1,19 +1,19 @@
 {
   "dependencies": {
-    "@cprecioso/next-emotion-ssr": "*",
-    "@emotion/core": "*",
-    "@emotion/styled": "*",
-    "next": "*",
-    "react": "*",
-    "react-dom": "*"
+    "@cprecioso/next-emotion-ssr": "^1.1.0",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@emotion/babel-preset-css-prop": "*",
-    "@types/node": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "next-optimized-images": "^2.5.4",
-    "typescript": "*"
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "build": "next build && next export"
