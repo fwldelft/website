@@ -43,6 +43,11 @@ export const LandingSection: FunctionComponent = () => (
         min-height: 100vh;
         width: min-content;
         margin: 0 auto;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
       `}
     >
       <h1
@@ -51,9 +56,8 @@ export const LandingSection: FunctionComponent = () => (
           color: ${colors.darkgray};
           padding: 0.4em 0.8em;
           font-size: 4em;
-          margin: 0;
+          margin-top: 0.2em;
 
-          margin-bottom: 0.5em;
           width: min-content;
         `}
       >
@@ -62,7 +66,6 @@ export const LandingSection: FunctionComponent = () => (
 
       <ul
         css={css`
-          margin: 4em 0;
           width: 100%;
           padding: 0;
         `}
