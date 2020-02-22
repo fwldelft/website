@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { FunctionComponent } from "react"
 import { colors } from "../../../theme"
 import { Row, Slide } from "../../Layout"
-import { Title } from "../Cover/Title"
+import { Title } from "./Title"
 
 const Red = styled.span`
   color: ${colors.red};
