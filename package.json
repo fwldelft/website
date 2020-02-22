@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@cprecioso/next-emotion-ssr": "*",
+    "@emotion/core": "*",
+    "@emotion/styled": "*",
+    "next": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "next-optimized-images": "^2.5.4",
+    "typescript": "*"
+  }
+}
