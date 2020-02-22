@@ -1,7 +1,7 @@
 import { jsx, keyframes } from "@emotion/core"
 import styled from "@emotion/styled"
 import { FunctionComponent } from "react"
-import { Row } from "../../Layout"
+import { Column } from "../../Layout"
 // @ts-ignore
 import backgroundImage from "./title-background.svg"
 
@@ -21,7 +21,7 @@ const Container = styled.div`
   position: relative;
 `
 
-const Content = styled(Row)`
+const Content = styled(Column)`
   position: relative;
   z-index: 10;
 
@@ -47,9 +47,12 @@ const Scroller = styled.div`
     linear alternate;
 `
 
-export const Title: FunctionComponent = ({ children }) => (
+export const Title: FunctionComponent<{ className?: string }> = ({
+  className,
+  children
+}) => (
   <Container>
-    <Content>{children}</Content>
+    <Content className={className}>{children}</Content>
     <Scroller />
   </Container>
 )
