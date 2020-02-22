@@ -30,6 +30,7 @@ export const LandingSection: FunctionComponent = () => (
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
+      overflow-x: hidden;
 
       a {
         color: inherit;
