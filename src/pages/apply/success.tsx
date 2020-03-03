@@ -1,11 +1,15 @@
 import { css, jsx } from "@emotion/core"
 import { NextPage } from "next"
+import { Head } from "next/document"
 import Link from "next/link"
 import { Title } from "../../components/Sections/Landing/Title"
 import { colors } from "../../theme"
 
 const ApplySuccessPage: NextPage = () => (
   <Title>
+    <Head>
+      <title>Apply for FWL Delft 2020</title>
+    </Head>
     <div
       css={css`
         height: 100vh;
