@@ -46,6 +46,8 @@ const ApplyFormPage: NextPage = () => (
             `}
           />
           <br />
+          <div data-netlify-recaptcha={true} />
+          <br />
           <input
             type="submit"
             css={css`
