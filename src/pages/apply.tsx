@@ -2,10 +2,10 @@ import { css, jsx } from "@emotion/core"
 import { NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
-import { Title } from "../../components/Sections/Landing/Title"
-import { colors } from "../../theme"
+import { Title } from "../components/Sections/Landing/Title"
+import { colors } from "../theme"
 
-const ApplySuccessPage: NextPage = () => (
+const ApplyFormPage: NextPage = () => (
   <Title>
     <Head>
       <title>Apply for FWL Delft 2020</title>
@@ -25,10 +25,19 @@ const ApplySuccessPage: NextPage = () => (
           text-align: center;
           color: ${colors.black};
           font-size: 1.4em;
-          max-width: 500px;
         `}
       >
-        <p>Thanks! We'll keep in touch.</p>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScgKzvKBiEsT8c0bQYmWvIrJ4OiTfHitYG4lPueF131tP3hrg/viewform?embedded=true"
+          width="640"
+          height="435"
+          frameBorder="0"
+          marginHeight={0}
+          marginWidth={0}
+        >
+          Loading…
+        </iframe>
+
         <p>
           <Link href="/" passHref={true}>
             <a
@@ -47,4 +56,4 @@ const ApplySuccessPage: NextPage = () => (
   </Title>
 )
 
-export default ApplySuccessPage
+export default ApplyFormPage
