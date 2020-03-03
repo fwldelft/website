@@ -1,6 +1,6 @@
 import { css, jsx } from "@emotion/core"
 import { NextPage } from "next"
-import { Head } from "next/document"
+import Head from "next/head"
 import Link from "next/link"
 import { Title } from "../../components/Sections/Landing/Title"
 import { colors } from "../../theme"
