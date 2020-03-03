@@ -15,7 +15,6 @@ const ApplyFormPage: NextPage = () => (
     >
       <form
         method="POST"
-        action="/apply/success"
         data-netlify={true}
         data-netlify-recaptcha={true}
         css={css`
