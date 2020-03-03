@@ -20,7 +20,8 @@ const ApplySuccessPage: NextPage = () => (
           padding: 1em;
           text-align: center;
           color: ${colors.black};
-          font-size: 2em;
+          font-size: 1.4em;
+          max-width: 500px;
         `}
       >
         <p>Thanks! We'll keep in touch.</p>

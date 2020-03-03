@@ -20,10 +20,11 @@ const ApplyFormPage: NextPage = () => (
         data-netlify-recaptcha={true}
         css={css`
           background: ${colors.white};
-          padding: 1em 0.5em;
+          padding: 1em;
           text-align: center;
           color: ${colors.black};
           font-size: 1.4em;
+          max-width: 500px;
         `}
       >
         <p>
