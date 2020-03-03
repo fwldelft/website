@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import { AppProps } from "next/app"
 import Head from "next/head"
 import { FunctionComponent } from "react"
+import "../../public/static/fonts/altedin/stylesheet.css"
 import { colors } from "../theme"
 
 const Container = styled.div`
@@ -37,6 +38,9 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => (
     </Head>
     <Global
       styles={css`
+        html {
+          scroll-behavior: smooth;
+        }
         body {
           margin: 0;
           padding: 0;

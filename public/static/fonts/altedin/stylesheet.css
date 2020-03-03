@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "AlteDIN";
+  src: url("hinted-subset-AlteDIN1451Mittelschrift.eot");
+  src: url("hinted-subset-AlteDIN1451Mittelschrift.eot?#iefix")
+      format("embedded-opentype"),
+    url("hinted-subset-AlteDIN1451Mittelschrift.woff2") format("woff2"),
+    url("hinted-subset-AlteDIN1451Mittelschrift.woff") format("woff"),
+    url("hinted-subset-AlteDIN1451Mittelschrift.ttf") format("truetype"),
+    url("hinted-subset-AlteDIN1451Mittelschrift.svg#AlteDIN1451Mittelschrift")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

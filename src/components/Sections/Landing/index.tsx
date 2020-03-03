@@ -1,15 +1,14 @@
 import { css, jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import { FunctionComponent } from "react"
-import { colors } from "../../../theme"
-import { Row, Slide } from "../../Layout"
+import { brandedText, colors } from "../../../theme"
 import { Title } from "./Title"
 
 const Red = styled.span`
   color: ${colors.red};
 `
 
-const MenuButton = styled.li`
+export const MenuButton = styled.li`
   display: block;
   text-align: center;
   margin: 0.3em 0.1em;
@@ -19,81 +18,74 @@ const MenuButton = styled.li`
   color: ${colors.white};
 `
 
-const DisabledMenuButton = styled(MenuButton)`
-  background-color: ${colors.white};
-  color: ${colors.red};
-`
-
-export const LandingSection: FunctionComponent = () => (
-  <Slide
-    css={css`
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
-      overflow-x: hidden;
-
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-    `}
-  >
-    <Title
-      css={css`
-        min-height: 100vh;
-        width: min-content;
-        margin: 0 auto;
-
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-      `}
-    >
-      <h1
+export const LandingSection: FunctionComponent = () => {
+  return (
+    <>
+      {" "}
+      <div
         css={css`
-          background-color: ${colors.white};
-          color: ${colors.darkgray};
-          padding: 0.4em 0.8em;
-          font-size: 4em;
-          margin-top: 0.2em;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: flex-start;
+          overflow-x: hidden;
 
-          width: min-content;
-        `}
-      >
-        FALLING WALLS LAB <Red>DELFT</Red> 2020
-      </h1>
-
-      <ul
-        css={css`
+          position: static;
           width: 100%;
-          padding: 0;
+
+          a {
+            color: inherit;
+            text-decoration: inherit;
+          }
         `}
       >
-        <DisabledMenuButton>
-          We will have news for you soon at
-        </DisabledMenuButton>
-        <Row
+        <Title
           css={css`
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-
-            > * {
-              flex: 1 0 auto;
-            }
+            width: min-content;
+            margin: 2em auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: center;
           `}
         >
-          <a href="https://www.facebook.com/FallingWallsLabDelft/">
-            <MenuButton>Facebook</MenuButton>
-          </a>
-          <a href="https://www.instagram.com/fwldelft/">
-            <MenuButton>Instagram</MenuButton>
-          </a>
-          <a href="mailto:info@fwldelft.com">
-            <MenuButton>Email</MenuButton>
-          </a>
-        </Row>
-      </ul>
-    </Title>
-  </Slide>
-)
+          <div
+            css={css`
+              display: flex;
+              flex-flow: column nowrap;
+              align-items: center;
+              width: 100%;
+              background-color: ${colors.white};
+              padding: 1.6em 3.2em;
+            `}
+          >
+            <div css={css``}>
+              <h1
+                css={css`
+                  ${brandedText};
+                  color: ${colors.gray};
+                  font-size: 4em;
+                  width: min-content;
+                  margin-top: 0.2em;
+                  font-weight: 800;
+                `}
+              >
+                FALLING WALLS LAB
+                <br />
+                <Red>DELFT</Red> 2020
+              </h1>
+            </div>
+
+            <p>
+              Present your research project to an illustrious panel of jurors,
+              impress them and win a trip to Berlin!
+            </p>
+            <a href="#explore">
+              <MenuButton>Explore</MenuButton>
+            </a>
+          </div>
+        </Title>
+      </div>
+      <div id="explore" />
+    </>
+  )
+}
