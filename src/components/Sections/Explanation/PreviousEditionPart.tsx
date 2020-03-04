@@ -1,4 +1,4 @@
-import { css, jsx } from "@emotion/core"
+import { jsx } from "@emotion/core"
 import { FunctionComponent } from "react"
 import { JudgeBox, Section, Subsection } from "./Util"
 
@@ -6,17 +6,13 @@ export const PreviousEditionPart: FunctionComponent = () => (
   <Section title="2019 Edition">
     <Subsection title="Video">
       <iframe
-        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FFallingWallsLabDelft%2Fvideos%2F596794524420481%2F&show_text=0&width=560"
         width="560"
         height="315"
-        css={css`
-          border: none;
-          overflow: hidden;
-        `}
-        scrolling="no"
-        allowTransparency
+        src="https://www.youtube-nocookie.com/embed/FghoNkMXMYg"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-      />
+      ></iframe>
     </Subsection>
 
     <Subsection title="Jury">
