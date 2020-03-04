@@ -43,6 +43,7 @@ const IndexPage: NextPage = () => (
       <meta property="og:locale" content="en" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
+      <link rel="canonical" href="https://fwldelft.com/2020" />
     </Head>
 
     <MenuButton
