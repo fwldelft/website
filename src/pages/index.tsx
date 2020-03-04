@@ -22,6 +22,27 @@ const IndexPage: NextPage = () => (
   <>
     <Head>
       <title>FWL Delft 2020</title>
+      <meta property="og:title" content="Falling Walls Lab Delft" />
+      <meta name="twitter:title" content="Falling Walls Lab Delft" />
+      <meta
+        name="description"
+        content="Present your research project to an illustrious panel of jurors, impress them and win a trip to Berlin!"
+      />
+      <meta
+        property="og:description"
+        content="Present your research project to an illustrious panel of jurors, impress them and win a trip to Berlin!"
+      />
+      <meta
+        name="twitter:description"
+        content="Present your research project to an illustrious panel of jurors, impress them and win a trip to Berlin!"
+      />
+      <meta property="og:image" content="/android-chrome-512x512.png" />
+      <meta property="og:image:width" content="512" />
+      <meta property="og:image:height" content="512" />
+      <meta name="twitter:image" content="/android-chrome-512x512.png" />
+      <meta property="og:locale" content="en" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
     </Head>
 
     <MenuButton
