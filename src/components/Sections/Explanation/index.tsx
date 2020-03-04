@@ -67,13 +67,13 @@ export const ExplanationSection: FunctionComponent = () => {
         <p>
           The <b>Falling Walls Lab</b> is an interdisciplinary format to
           showcase the next generation of top researchers developed and hosted
-          annually by the Falling Walls Foundation in Berlin on 8 November
-          [FIXME]. In 3-minute talks, outstanding talents and innovative
-          thinkers share their research projects, business models and social
-          initiatives with an interdisciplinary audience and jury. Academic
-          institutions worldwide are invited to host their own Falling Walls Lab
-          and to send their winner/s to the Falling Walls Lab Finale on 8
-          November 2019 [FIXME] in Berlin.
+          annually by the Falling Walls Foundation in Berlin on November 8th. In
+          3-minute talks, outstanding talents and innovative thinkers share
+          their research projects, business models and social initiatives with
+          an interdisciplinary audience and jury. Academic institutions
+          worldwide are invited to host their own Falling Walls Lab and to send
+          their winner/s to the Falling Walls Lab Finale on November 8th, 2020
+          in Berlin.
         </p>
 
         <div>
