@@ -19,6 +19,7 @@ const ScrollAnimation = keyframes`
 
 const Container = styled.div`
   position: relative;
+  overflow: hidden;
 `
 
 const Content = styled(Column)`
@@ -35,7 +36,8 @@ const Scroller = styled.div`
   left: 0;
   top: 0;
   width: ${100 * PARTS}%;
-  height: 100%;
+  height: 100vh;
+
 
   background-image: url("${backgroundImage}");
   background-size: auto 100%;
@@ -52,7 +54,7 @@ export const Title: FunctionComponent<{ className?: string }> = ({
   children
 }) => (
   <Container>
-    <Content className={className}>{children}</Content>
     <Scroller />
+    <Content className={className}>{children}</Content>
   </Container>
 )
