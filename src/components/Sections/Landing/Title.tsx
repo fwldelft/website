@@ -19,7 +19,7 @@ const ScrollAnimation = keyframes`
 
 const Container = styled.div`
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 `
 
 const Content = styled(Column)`
