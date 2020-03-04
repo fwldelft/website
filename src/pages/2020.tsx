@@ -3,6 +3,8 @@ import styled from "@emotion/styled"
 import { NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
+import { JsonLd } from "react-schemaorg"
+import { Event as SchemaOrgEvent } from "schema-dts"
 import { ExplanationSection } from "../components/Sections/Explanation"
 import { FooterSection } from "../components/Sections/Footer"
 import { LandingSection, MenuButton } from "../components/Sections/Landing"
@@ -44,6 +46,24 @@ const _2020Page: NextPage = () => (
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
       <link rel="canonical" href="https://fwldelft.com/2020" />
+      <JsonLd<SchemaOrgEvent>
+        item={{
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "@id": "https://fwldelft.com/2020",
+          location: {
+            "@type": "Place",
+            name: "Delft",
+            address: "Delft, Zuid-Holland, NL"
+          },
+          name: "Falling Walls Lab Delft 2020",
+          startDate: new Date(2020, 6 - 1, 12).toISOString(),
+          endDate: new Date(2020, 6 - 1, 12).toISOString(),
+          description:
+            "Present your research project to an illustrious panel of jurors, impress them and win a trip to Berlin!",
+          offers: { "@type": "Offer", price: 0, priceCurrency: "EUR" }
+        }}
+      />
     </Head>
 
     <MenuButton
