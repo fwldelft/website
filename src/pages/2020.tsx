@@ -18,7 +18,7 @@ const FooterLink = styled(MenuButton)`
   }
 `
 
-const IndexPage: NextPage = () => (
+const _2020Page: NextPage = () => (
   <>
     <Head>
       <title>FWL Delft 2020</title>
@@ -132,4 +132,4 @@ const IndexPage: NextPage = () => (
   </>
 )
 
-export default IndexPage
+export default _2020Page
