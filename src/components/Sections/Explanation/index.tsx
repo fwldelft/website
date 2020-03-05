@@ -63,7 +63,7 @@ export const ExplanationSection: FunctionComponent = () => {
         margin: auto;
       `}
     >
-      <Section title="What is Falling Walls Lab?">
+      <Section title="Falling Walls Lab Delft 2020">
         <p>
           The <b>Falling Walls Lab</b> is an interdisciplinary format to
           showcase the next generation of top researchers developed and hosted
@@ -92,9 +92,9 @@ export const ExplanationSection: FunctionComponent = () => {
           <Step icon={faPlaneDeparture}>
             <p>
               The winner of <b>Falling Walls Lab Delft</b> wins a trip to Berlin
-              where he/she will present the same idea at the Grand Finale in
-              front of a distinguished jury among 100 Finalists from all over
-              the world
+              where they will present the same idea at the Grand Finale in front
+              of a distinguished jury among 100 Finalists from all over the
+              world
             </p>
           </Step>
 
