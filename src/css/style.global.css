@@ -1,0 +1,32 @@
+:root {
+  --white-color: #ffffff;
+  --red-color: #f41f1f;
+  --black-color: #000000;
+  --grey-color: #e9e2df;
+  --background-color: var(--white-color);
+  --accent-color: var(--red-color);
+  --text-color: var(--black-color);
+  --decoration-size: 200px;
+  --grid-gutter: 2em;
+}
+
+body {
+  margin: 0;
+  font-family: DINOT;
+  color: var(--text-color);
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
