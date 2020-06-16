@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "DINOT";
+  src: local("DINOT-Medium"), url("subset-DINOT-Medium.woff2") format("woff2"),
+    url("subset-DINOT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: local("DINOT-Bold"), url("subset-DINOT-Bold.woff2") format("woff2"),
+    url("subset-DINOT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: local("DINOT-Regular"), url("subset-DINOT-Regular.woff2") format("woff2"),
+    url("subset-DINOT-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: local("DINOT-Light"), url("subset-DINOT-Light.woff2") format("woff2"),
+    url("subset-DINOT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: local("DINOT-Black"), url("subset-DINOT-Black.woff2") format("woff2"),
+    url("subset-DINOT-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
