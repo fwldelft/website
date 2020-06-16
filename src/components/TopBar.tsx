@@ -31,11 +31,9 @@ export const TopBar: FunctionComponent = () => (
             <li>About</li>
           </a>
         </Link>
-        <Link href="/" as="/#contact">
-          <a>
-            <li>Contact</li>
-          </a>
-        </Link>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
         <Link href="/" as="/#apply">
           <a>
             <li className={cx(styles["accent-button"])}>Apply</li>
