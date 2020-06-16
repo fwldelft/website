@@ -1,2 +1,2 @@
-export const cx = (...classnames: string[]) =>
+export const cx = (...classnames: any[]) =>
   classnames.filter((v) => v).join(" ")
