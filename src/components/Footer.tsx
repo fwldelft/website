@@ -19,9 +19,10 @@ export const Footer: FunctionComponent = () => (
       </div>
     </section>
 
-    <section className={cx(styles["section"], styles["sponsors-section"])}>
-      <div className={cx(styles["row"], styles["wrapped-content"])}>
-        {/* <img
+    {/*
+      <section className={cx(styles["section"], styles["sponsors-section"])}>
+        <div className={cx(styles["row"], styles["wrapped-content"])}>
+          <img
             src={require("../img/55b7e1a54913be08de710bf15ebea1fd.png")}
             className={cx(styles["sponsor-logo"])}
           />
@@ -32,8 +33,9 @@ export const Footer: FunctionComponent = () => (
           <img
             src={require("../img/c1ce9b5b31d2f9866349dbcd47ac75b8.png")}
             className={cx(styles["sponsor-logo"])}
-          /> */}
-      </div>
-    </section>
+          />
+        </div>
+      </section>
+    */}
   </footer>
 )
