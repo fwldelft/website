@@ -1,4 +1,6 @@
 import React, { FunctionComponent } from "react"
+import styles from "../css/style.module.css"
+import { cx } from "../util/cx"
 
 export const NotificationScript: FunctionComponent = () => (
   <>
@@ -24,7 +26,12 @@ export const NotificationScript: FunctionComponent = () => (
 )
 
 export const NotificationPrompt: FunctionComponent = () => (
-  <div className="onesignal-customlink-container" />
+  <div
+    className={cx(
+      "onesignal-customlink-container",
+      styles["notification-prompt"]
+    )}
+  />
 )
 
 export const AnalyticsScript: FunctionComponent = () => (
