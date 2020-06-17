@@ -38,9 +38,6 @@ export const ApplyFaqSection: FunctionComponent = () => (
           <div className={cx(styles["faq-how-step-number"])}>1</div>
           <div className={cx(styles["faq-how-step-content"])}>
             <p>
-              Click the button below and choose <b>Delft</b>.
-            </p>
-            <p>
               Fill in your <b>personal information</b> (name, country,
               education, etc.)
             </p>
@@ -84,7 +81,7 @@ export const ApplyFaqSection: FunctionComponent = () => (
             </p>
           </div>
         </div>
-        <a href="https://falling-walls.com/lab/apply/">
+        <a href="https://falling-walls.com/lab/apply/delft-online-lab/apply/">
           <button className={cx(styles["faq-howto-cta"])}>Apply now!</button>
         </a>
       </div>
