@@ -203,6 +203,11 @@
   background-size: auto var(--decoration-size);
 }
 
+.questions-content {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 footer .section:last-of-type .wrapped-content {
   margin-bottom: 3em;
   margin-bottom: calc(1em + env(safe-area-inset-bottom));
@@ -233,6 +238,7 @@ footer .section {
 .about-point {
   grid-row-start: 2;
   justify-content: flex-start;
+  text-align: center;
 }
 
 .about-point p {
@@ -445,10 +451,6 @@ footer .section {
   padding: 1em 1.5em;
 }
 
-.questions-section a {
-  color: inherit;
-}
-
 .about-points {
   display: contents;
 }
@@ -499,6 +501,7 @@ footer .section {
 
   .hero-section .wrapped-content {
     position: relative;
+    padding: 1em;
   }
 
   .hero-section-title {

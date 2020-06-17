@@ -8,8 +8,8 @@ export const Footer: FunctionComponent = () => (
       id="contact"
       className={cx(styles["section"], styles["questions-section"])}
     >
-      <div className={cx(styles["wrapped-content"])}>
-        <div>
+      <div className={cx(styles["wrapped-content"], styles["grid"])}>
+        <div className={cx(styles["questions-content"])}>
           <h2>Questions?</h2>
           <p>Our team will be happy to answer you! Please contact:</p>
           <p>
