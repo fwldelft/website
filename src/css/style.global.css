@@ -34,3 +34,7 @@ h3 {
 html {
   scroll-behavior: smooth;
 }
+
+.onesignal-customlink-explanation {
+  color: var(--text-color) !important;
+}
