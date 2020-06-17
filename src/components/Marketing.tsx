@@ -1,5 +1,27 @@
 import React, { FunctionComponent } from "react"
 
+export const AnalyticsScript: FunctionComponent = () => (
+  <>
+    <script
+      key="analytics-script"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-159829690-1"
+      async
+    />
+    <script
+      key="analytics-config"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-159829690-1');
+        `,
+      }}
+    />
+  </>
+)
+
 export const SiteIcons: FunctionComponent = () => (
   <>
     <link
