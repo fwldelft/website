@@ -20,7 +20,7 @@ export const HeroLanding: FunctionComponent = () => (
         <Link href="/apply">
           <a>
             <p>
-              Delft
+              Online
               <br />
               <time>Sep 23rd, 2020</time>
             </p>
