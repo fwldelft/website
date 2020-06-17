@@ -2,6 +2,7 @@ import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+
 export const TestimonialsSection: FunctionComponent = () => (
   <section className={cx(styles["section"], styles["testimonials-section"])}>
     <div className={cx(styles["grid"], styles["wrapped-content"])}>

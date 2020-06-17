@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+
 export const HeroLanding: FunctionComponent = () => (
   <header className={cx(styles["section"], styles["hero-section"])}>
     <div className={cx(styles["wrapped-content"])}>

@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+
 export const HowWorksSection: FunctionComponent = () => (
   <section className={cx(styles["section"], styles["how-works-section"])}>
     <div className={cx(styles["grid"], styles["wrapped-content"])}>

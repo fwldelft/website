@@ -2,6 +2,7 @@ import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+
 export const AboutSection: FunctionComponent = () => (
   <section
     id="about"
