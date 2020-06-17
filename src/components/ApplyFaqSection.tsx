@@ -33,7 +33,17 @@ export const ApplyFaqSection: FunctionComponent = () => (
     <div className={cx(styles["grid"], styles["wrapped-content"])}>
       <div id="apply" className={cx(styles["faq-howto"])}>
         <h2>How to participate</h2>
-        <p>Follow these four simple steps to submit your idea</p>
+        <p>Follow these simple steps to submit your idea</p>
+        <p>
+          <b>
+            The deadline to apply is <time>July 31st, 2020</time>
+          </b>
+          , and the competition will take place online on{" "}
+          <b>
+            <time>September 23rd, 2020</time>
+          </b>
+          .
+        </p>
         <div className={cx(styles["card"], styles["faq-how-step"])}>
           <div className={cx(styles["faq-how-step-number"])}>1</div>
           <div className={cx(styles["faq-how-step-content"])}>
@@ -152,6 +162,13 @@ export const ApplyFaqSection: FunctionComponent = () => (
               would like to break down, why it exists and how you intend to
               break it.
             </i>
+          </p>
+        </QA>
+        <QA title="I have another question that's not here">
+          <p>
+            You can contact us at{" "}
+            <a href="mailto:info@fwldelft.com">info@fwldelft.com</a>, and we'll
+            try to solve your doubts.
           </p>
         </QA>
       </div>
