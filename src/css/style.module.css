@@ -455,6 +455,11 @@ footer .section {
   display: contents;
 }
 
+.menu-open,
+.menu-open-label {
+  display: none;
+}
+
 @media only screen and (max-width: 750px) {
   .wrapped-content.grid {
     display: flex;
@@ -513,5 +518,58 @@ footer .section {
     top: 2em;
     right: 2em;
     font-size: 1em;
+  }
+
+  .menu-open:checked ~ .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu-open-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    z-index: 110;
+
+    color: var(--text-color);
+    transition: color var(--transition-duration) ease-in-out;
+
+    width: 2em;
+  }
+
+  .menu-open:checked ~ .menu-open-label {
+    color: var(--background-color);
+  }
+
+  .nav-links {
+    transition: opacity var(--transition-duration) ease-in-out;
+
+    opacity: 0;
+    pointer-events: none;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+    --background-color: var(--red-color);
+    --text-color: var(--white-color);
+    --accent-color: var(--white-color);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-navigation .wrapped-content {
+    flex-wrap: nowrap;
   }
 }
