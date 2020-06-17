@@ -159,6 +159,12 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.hero-section-date a {
+  text-decoration: none !important;
 }
 
 .wrapped-content {

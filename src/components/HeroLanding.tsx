@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
@@ -16,11 +17,15 @@ export const HeroLanding: FunctionComponent = () => (
         </p>
       </div>
       <div className={cx(styles["hero-section-date"])}>
-        <p>
-          Delft
-          <br />
-          <time>Sep 23rd 2020</time>
-        </p>
+        <Link href="/apply">
+          <a>
+            <p>
+              Delft
+              <br />
+              <time>Sep 23rd, 2020</time>
+            </p>
+          </a>
+        </Link>
       </div>
     </div>
   </header>
