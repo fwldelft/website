@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react"
 import css from "styled-jsx/css"
 import { DetailsSection } from "../components/DetailsSection"
+import { NotificationPrompt } from "../components/Marketing"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
@@ -55,6 +56,7 @@ export default (() => (
           <h2>Jury</h2>
           <h2>Board</h2>
         </div>
+        <NotificationPrompt />
       </SectionContent>
     </Section>
   </>

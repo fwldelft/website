@@ -1,5 +1,32 @@
 import React, { FunctionComponent } from "react"
 
+export const NotificationScript: FunctionComponent = () => (
+  <>
+    <script
+      key="notification-script"
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async
+    />
+    <script
+      key="notification-config"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.OneSignal = window.OneSignal || [];
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId: "b2383728-3df7-4aaf-a38d-c13247a7156b",
+            });
+          });
+        `,
+      }}
+    />
+  </>
+)
+
+export const NotificationPrompt: FunctionComponent = () => (
+  <div className="onesignal-customlink-container" />
+)
+
 export const AnalyticsScript: FunctionComponent = () => (
   <>
     <script

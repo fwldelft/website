@@ -2,7 +2,11 @@ import { AppProps } from "next/app"
 import Head from "next/head"
 import { FunctionComponent } from "react"
 import { Footer } from "../components/Footer"
-import { AnalyticsScript, SiteIcons } from "../components/Marketing"
+import {
+  AnalyticsScript,
+  NotificationScript,
+  SiteIcons,
+} from "../components/Marketing"
 import { TopBar } from "../components/TopBar"
 import "../css/style.global.css"
 
@@ -17,6 +21,7 @@ export default (({ Component, pageProps }) => (
       />
       <link key="font-dinot" href="/static/fonts/dinot.css" rel="stylesheet" />
       <SiteIcons />
+      <NotificationScript />
       <AnalyticsScript />
     </Head>
     <TopBar />
