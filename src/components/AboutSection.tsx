@@ -1,3 +1,7 @@
+import ConferenceIcon from "!@svgr/webpack!../img/noun_conference_89481.svg"
+import InnovatorIcon from "!@svgr/webpack!../img/noun_innovative_2340053.svg"
+import NetworkingIcon from "!@svgr/webpack!../img/noun_network_1354320.svg"
+import PitchIcon from "!@svgr/webpack!../img/noun_presentation_2578417.svg"
 import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
@@ -35,7 +39,9 @@ export const AboutSection: FunctionComponent = () => (
       </div>
       <div className={cx(styles["about-points"])}>
         <div className={cx(styles["about-point"], styles["col"])}>
-          <div className={cx(styles["icon"])} />
+          <div className={cx(styles["icon"])}>
+            <InnovatorIcon />
+          </div>
           <p>
             <b>WILL YOU BE THE INNOVATOR OF THE YEAR?</b>
           </p>
@@ -45,7 +51,9 @@ export const AboutSection: FunctionComponent = () => (
           </p>
         </div>
         <div className={cx(styles["about-point"], styles["col"])}>
-          <div className={cx(styles["icon"])} />
+          <div className={cx(styles["icon"])}>
+            <PitchIcon />
+          </div>
           <p>
             <b>GET HELP TO PREPARE YOUR PITCH</b>
           </p>
@@ -56,7 +64,9 @@ export const AboutSection: FunctionComponent = () => (
           </p>
         </div>
         <div className={cx(styles["about-point"], styles["col"])}>
-          <div className={cx(styles["icon"])} />
+          <div className={cx(styles["icon"])}>
+            <ConferenceIcon />
+          </div>
           <p>
             <b>GET THE CHANCE TO PRESENT IN BERLIN</b>
           </p>
@@ -67,7 +77,9 @@ export const AboutSection: FunctionComponent = () => (
           </p>
         </div>
         <div className={cx(styles["about-point"], styles["col"])}>
-          <div className={cx(styles["icon"])} />
+          <div className={cx(styles["icon"])}>
+            <NetworkingIcon />
+          </div>
           <p>
             <b>NETWORKING WITH THE BRIGHTEST MINDS</b>
           </p>

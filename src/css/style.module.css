@@ -183,9 +183,10 @@
   flex-grow: 0;
 }
 
-.icon {
-  border: 1px solid var(--accent-color);
-  border-radius: 50%;
+.about-point .icon {
+  color: var(--accent-color);
+  font-size: 2.5em;
+
   width: 1em;
   height: 1em;
 }
@@ -250,6 +251,7 @@ footer .section {
 .about-info {
   grid-column-start: 2;
   grid-column-end: 5;
+  padding: 1em;
 }
 
 .how-works-section h2 {
@@ -573,5 +575,9 @@ footer .section {
 
   .top-navigation .wrapped-content {
     flex-wrap: nowrap;
+  }
+
+  .about-point .icon {
+    margin-top: 1.5em;
   }
 }
