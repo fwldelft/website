@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react"
 import css from "styled-jsx/css"
+import { ApplyFaqSection } from "../components/ApplyFaqSection"
 import { DetailsSection } from "../components/DetailsSection"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
@@ -57,5 +58,7 @@ export default (() => (
         </div>
       </SectionContent>
     </Section>
+
+    <ApplyFaqSection />
   </>
 )) as FunctionComponent
