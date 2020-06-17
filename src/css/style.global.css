@@ -6,7 +6,7 @@
   --background-color: var(--white-color);
   --accent-color: var(--red-color);
   --text-color: var(--black-color);
-  --decoration-size: 200px;
+  --decoration-size: 20vw;
   --grid-gutter: 2em;
 }
 
