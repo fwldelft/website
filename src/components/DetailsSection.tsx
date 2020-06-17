@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+import { NotificationPrompt } from "./Marketing"
 
 export const DetailsSection = () => (
   <section className={cx(styles["section"], styles["details-section"])}>
@@ -21,6 +22,7 @@ export const DetailsSection = () => (
           <a href="https://instagram.com/fwldelft">Instagram</a> ·{" "}
           <a href="https://www.facebook.com/FallingWallsLabDelft">Facebook</a>
         </p>
+        <NotificationPrompt />
       </div>
     </div>
   </section>

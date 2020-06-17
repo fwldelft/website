@@ -498,8 +498,3 @@ footer .section {
     font-size: 1em;
   }
 }
-
-.notification-prompt {
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
