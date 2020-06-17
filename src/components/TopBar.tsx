@@ -7,10 +7,35 @@ import { cx } from "../util/cx"
 let i = 0
 
 export const TopBar: FunctionComponent = () => {
-  const menuOpenId = React.useMemo(() => `__menu-open__${i++}__`, [])
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleOpen = React.useCallback(() => {
+    setIsOpen((v) => !v)
+  }, [])
+  const close = React.useCallback(() => {
+    setIsOpen(false)
+  }, [])
+
+  React.useEffect(() => {
+    if (isOpen) {
+      window.scroll(0, 0)
+      document.body.style.overflowY = "hidden"
+      document.body.style.height = "100vh"
+
+      return () => {
+        document.body.style.overflowY = ""
+        document.body.style.height = ""
+      }
+    }
+  }, [isOpen])
 
   return (
-    <nav className={cx(styles["top-navigation"], styles["row"])}>
+    <nav
+      className={cx(
+        styles["top-navigation"],
+        styles["row"],
+        isOpen && styles["is-open"]
+      )}
+    >
       <div className={cx(styles["wrapped-content"])}>
         <header>
           <a href="/">
@@ -21,15 +46,12 @@ export const TopBar: FunctionComponent = () => {
             </h1>
           </a>
         </header>
-        <input
-          id={menuOpenId}
-          className={styles["menu-open"]}
-          type="checkbox"
-        />
-        <label htmlFor={menuOpenId} className={styles["menu-open-label"]}>
+
+        <label onClick={toggleOpen} className={styles["menu-open-label"]}>
           <MenuIcon />
         </label>
-        <ul className={cx(styles["nav-links"])}>
+
+        <ul className={cx(styles["nav-links"])} onClick={close}>
           <Link href="/2020">
             <a>
               <li>2020 Edition</li>

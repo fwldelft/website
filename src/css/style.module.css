@@ -522,7 +522,7 @@ footer .section {
     font-size: 1em;
   }
 
-  .menu-open:checked ~ .nav-links {
+  .is-open .nav-links {
     opacity: 1;
     pointer-events: auto;
   }
@@ -540,7 +540,7 @@ footer .section {
     width: 2em;
   }
 
-  .menu-open:checked ~ .menu-open-label {
+  .is-open .menu-open-label {
     color: var(--background-color);
   }
 
