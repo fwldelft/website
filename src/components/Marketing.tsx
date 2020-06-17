@@ -17,6 +17,7 @@ export const NotificationScript: FunctionComponent = () => (
           OneSignal.push(function() {
             OneSignal.init({
               appId: "b2383728-3df7-4aaf-a38d-c13247a7156b",
+              safari_web_id: "web.onesignal.auto.370dd028-ab8a-4720-9087-4e2c917686de",
             });
           });
         `,
