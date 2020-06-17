@@ -7,6 +7,7 @@
   --accent-color: var(--red-color);
   --text-color: var(--black-color);
   --decoration-size: 20vw;
+  --decoration-size: min(20vw, 200px);
   --grid-gutter: 2em;
   --transition-duration: 200ms;
 }

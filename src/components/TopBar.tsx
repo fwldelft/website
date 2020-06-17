@@ -10,7 +10,7 @@ export const TopBar: FunctionComponent = () => {
   const menuOpenId = React.useMemo(() => `__menu-open__${i++}__`, [])
 
   return (
-    <nav className={cx(styles["top-navigation"])}>
+    <nav className={cx(styles["top-navigation"], styles["row"])}>
       <div className={cx(styles["wrapped-content"])}>
         <header>
           <a href="/">

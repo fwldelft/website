@@ -175,6 +175,8 @@
   margin-left: max(5vw, calc(1em + env(safe-area-inset-left)));
   margin-right: 5vw;
   margin-right: max(5vw, calc(1em + env(safe-area-inset-right)));
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .top-navigation .wrapped-content header {
@@ -499,7 +501,7 @@ footer .section {
   }
 
   .about-point {
-    min-width: 200px;
+    min-width: 90vw;
     max-width: calc(50% - 4em);
     margin: 1em;
   }
