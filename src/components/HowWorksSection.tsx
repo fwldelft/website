@@ -9,7 +9,9 @@ export const HowWorksSection: FunctionComponent = () => (
       <div className={cx(styles["how-works-step-ruler"])} />
       <div className={cx(styles["how-works-step"], styles["first"])}>
         <div className={cx(styles["how-works-step-number"])}>1</div>
-        <p>Apply for Delft Lab before [FIXME].</p>
+        <p>
+          Apply for Delft Lab before <b>July 31st, 2020</b>.
+        </p>
         <p>
           Fill in the application to submit your idea (which will take no more
           than 10 minutes)
@@ -41,7 +43,7 @@ export const HowWorksSection: FunctionComponent = () => (
         <p>
           Three winners of the Berlin Lab Finale receive a cash prize and the
           ity to give their talk on the grand stage of the Falling Walls
-          Conference on [FIXME] in front of 600 institutional leaders and
+          Conference on Nov 8th 2020 in front of 600 institutional leaders and
           decision makers
         </p>
       </div>

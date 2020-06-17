@@ -24,7 +24,8 @@ export const AboutSection: FunctionComponent = () => (
           their research projects, business models and social initiatives with
           an interdisciplinary audience and jury. Academic institutions
           worldwide are invited to host their own Falling Walls Lab and to send
-          their winner/s to the Falling Walls Lab Finale on [FIXME] in Berlin.
+          their winner/s to the Falling Walls Lab Finale on Nov 8th 2020 in
+          Berlin.
         </p>
         <p>
           <Link href="/2020">
