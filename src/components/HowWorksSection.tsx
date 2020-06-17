@@ -10,7 +10,11 @@ export const HowWorksSection: FunctionComponent = () => (
       <div className={cx(styles["how-works-step"], styles["first"])}>
         <div className={cx(styles["how-works-step-number"])}>1</div>
         <p>
-          Apply for Delft Lab before <b>July 31st, 2020</b>.
+          Apply for Delft Lab before{" "}
+          <b>
+            <time>July 31st, 2020</time>
+          </b>
+          .
         </p>
         <p>
           Fill in the application to submit your idea (which will take no more
@@ -28,23 +32,28 @@ export const HowWorksSection: FunctionComponent = () => (
         <div className={cx(styles["how-works-step-number"])}>3</div>
         <p>
           If you are selected as one of the participants, we will invite you to
-          Delft Lab on June 12th, 2020
+          Delft Lab on{" "}
+          <b>
+            <time>September 23rd, 2020</time>
+          </b>
         </p>
       </div>
       <div className={cx(styles["how-works-step"])}>
         <div className={cx(styles["how-works-step-number"])}>4</div>
         <p>
-          The winner of Moscow round will get the trip to Berlin and a chance to
-          present the idea at Grand Finale
+          The winner of the Delft round will get the trip to Berlin and a chance
+          to present the idea at Grand Finale on{" "}
+          <b>
+            <time>Nov 8th 2020</time>
+          </b>
         </p>
         <p>Trip and accommodation expenses are covered</p>
       </div>
       <div className={cx(styles["how-works-note"])}>
         <p>
           Three winners of the Berlin Lab Finale receive a cash prize and the
-          ity to give their talk on the grand stage of the Falling Walls
-          Conference on Nov 8th 2020 in front of 600 institutional leaders and
-          decision makers
+          opportunity to give their talk on the grand stage of the Falling Walls
+          Conference in front of 600 institutional leaders and decision makers
         </p>
       </div>
     </div>
