@@ -583,3 +583,24 @@ footer .section {
     margin-top: 1.5em;
   }
 }
+
+.dry-cover {
+  --background-color: var(--red-color);
+  --text-color: var(--white-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.dry-cover h1 {
+  font-size: 4em;
+}
+
+.teaser {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.teaser-section {
+  text-align: center;
+  display: contents;
+}
