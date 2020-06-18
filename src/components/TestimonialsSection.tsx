@@ -10,7 +10,7 @@ export const TestimonialsSection: FunctionComponent = () => (
         <blockquote className={cx(styles["blockquote"])}>
           <div className={cx(styles["quote"])}>
             <p>
-              <b>Breaking the wall of affordable housing and wast plastic</b>
+              <b>Breaking the wall of affordable housing and waste plastic</b>
             </p>
             <p>
               Rushabh Chheda won third place at the Falling Walls Lab Finale

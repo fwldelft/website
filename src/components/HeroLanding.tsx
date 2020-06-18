@@ -22,7 +22,7 @@ export const HeroLanding: FunctionComponent = () => (
             <p>
               Online
               <br />
-              <time>Sep 23rd, 2020</time>
+              <time dateTime="2002-09-23">Sep 23rd, 2020</time>
             </p>
           </a>
         </Link>

@@ -12,7 +12,7 @@ export const HowWorksSection: FunctionComponent = () => (
         <p>
           Apply for Delft Lab before{" "}
           <b>
-            <time>July 31st, 2020</time>
+            <time dateTime="2020-07-31">July 31st, 2020</time>
           </b>
           .
         </p>
@@ -34,7 +34,7 @@ export const HowWorksSection: FunctionComponent = () => (
           If you are selected as one of the participants, we will invite you to
           Delft Lab on{" "}
           <b>
-            <time>September 23rd, 2020</time>
+            <time dateTime="2020-09-23">September 23rd, 2020</time>
           </b>
         </p>
       </div>
@@ -44,7 +44,7 @@ export const HowWorksSection: FunctionComponent = () => (
           The winner of the Delft round will get the trip to Berlin and a chance
           to present the idea at Grand Finale on{" "}
           <b>
-            <time>Nov 8th 2020</time>
+            <time dateTime="2020-11-08">November, 8th 2020</time>
           </b>
         </p>
         <p>Trip and accommodation expenses are covered</p>

@@ -36,11 +36,12 @@ export const ApplyFaqSection: FunctionComponent = () => (
         <p>Follow these simple steps to submit your idea</p>
         <p>
           <b>
-            The deadline to apply is <time>July 31st, 2020</time>
+            The deadline to apply is{" "}
+            <time dateTime="2020-07-31">July 31st, 2020</time>
           </b>
           , and the competition will take place online on{" "}
           <b>
-            <time>September 23rd, 2020</time>
+            <time dateTime="2020-09-23">September 23rd, 2020</time>
           </b>
           .
         </p>

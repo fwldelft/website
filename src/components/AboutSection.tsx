@@ -58,9 +58,9 @@ export const AboutSection: FunctionComponent = () => (
             <b>GET HELP TO PREPARE YOUR PITCH</b>
           </p>
           <p>
-            Every accepted applicant will have the opportunity to participate
-            for free in a workshop on how to pitch your idea with a professional
-            coach.
+            Every accepted applicant will have the opportunity to participate in
+            a workshop on how to pitch your idea with a professional coach, for
+            free.
           </p>
         </div>
         <div className={cx(styles["about-point"], styles["col"])}>
@@ -72,8 +72,8 @@ export const AboutSection: FunctionComponent = () => (
           </p>
           <p>
             The best idea will get the opportunity to attend the Conference and
-            the Lab Finale in Berlin and present again with other 99 brilliant
-            innovator from all over the world.
+            the Lab Finale in Berlin and present their idea against other 99
+            brilliant innovators from all over the world.
           </p>
         </div>
         <div className={cx(styles["about-point"], styles["col"])}>
@@ -85,8 +85,8 @@ export const AboutSection: FunctionComponent = () => (
           </p>
           <p>
             During the Competition there will be the opportunity to connect with
-            the best member of the local scientific community and explore each
-            other views of the future.
+            the best members of the local scientific community and explore each
+            other's views of the future.
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ export const DetailsSection = () => (
         <h2>Now online!</h2>
         <p>
           With the 2020 edition, we're breaking the wall of social distance! The
-          Delft lab will take place completely digitally in September 2020.
+          Delft lab will take place completely online in September 2020.
         </p>
         <p>
           We're still finalizing the details of which platform to use; but rest
