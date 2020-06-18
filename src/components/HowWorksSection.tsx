@@ -51,8 +51,8 @@ export const HowWorksSection: FunctionComponent = () => (
       <div className={cx(styles["how-works-note"])}>
         <p>
           Three winners of the Berlin Lab Finale receive a cash prize and the
-          opportunity to give their talk on the grand stage of the Falling Walls
-          Conference in front of 600 institutional leaders and decision makers
+          opportunity to give their talk in front of 600 institutional leaders
+          and decision makers
         </p>
       </div>
     </div>

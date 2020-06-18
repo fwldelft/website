@@ -71,9 +71,8 @@ export const AboutSection: FunctionComponent = () => (
             <b>GET THE CHANCE TO PRESENT IN BERLIN</b>
           </p>
           <p>
-            The best idea will get the opportunity to attend the Conference and
-            the Lab Finale in Berlin and present their idea against other 99
-            brilliant innovators from all over the world.
+            The best idea will get the opportunity to present their idea against
+            other 99 brilliant innovators from all over the world.
           </p>
         </div>
         <div className={cx(styles["about-point"], styles["col"])}>
