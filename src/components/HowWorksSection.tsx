@@ -41,13 +41,12 @@ export const HowWorksSection: FunctionComponent = () => (
       <div className={cx(styles["how-works-step"])}>
         <div className={cx(styles["how-works-step-number"])}>4</div>
         <p>
-          The winner of the Delft round will get the trip to Berlin and a chance
-          to present the idea at Grand Finale on{" "}
+          The winner of the Delft round will get to join the Berlin edition and
+          a chance to present the idea at Grand Finale on{" "}
           <b>
             <time dateTime="2020-11-08">November, 8th 2020</time>
           </b>
         </p>
-        <p>Trip and accommodation expenses are covered</p>
       </div>
       <div className={cx(styles["how-works-note"])}>
         <p>
