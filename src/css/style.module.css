@@ -267,6 +267,7 @@ footer .section {
   padding: 1em 2em;
   grid-column-start: 1;
   grid-column-end: 4;
+  margin-bottom: 1em;
 }
 
 .blockquote {
@@ -276,6 +277,7 @@ footer .section {
   color: var(--text-color);
   margin: 0;
   margin-bottom: 2em;
+  margin-right: 0.5em;
 }
 
 .quote {
@@ -452,7 +454,7 @@ footer .section {
 
   grid-column-start: 1;
   grid-column-end: 3;
-  padding: 1em 1.5em;
+  padding: 1em 1.5em 2em;
 }
 
 .about-points {
