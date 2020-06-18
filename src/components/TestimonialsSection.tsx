@@ -22,7 +22,7 @@ export const TestimonialsSection: FunctionComponent = () => (
             <div className={cx(styles["quote-portrait"], styles["rushab"])} />
             <div>
               <p>
-                <b>Rushab Chheda</b>
+                <b>Rushabh Chheda</b>
                 <br />
                 Winner FWL Delft 2019
               </p>
