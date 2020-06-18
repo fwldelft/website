@@ -108,6 +108,10 @@
   padding-bottom: 2em;
 }
 
+.section.no-min {
+  min-height: 0;
+}
+
 .hero-section-title {
   width: 50%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -603,4 +607,20 @@ footer .section {
 .teaser-section {
   text-align: center;
   display: contents;
+}
+
+.recap .full,
+.recap > h2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.recap > h2 {
+  margin: 0;
+  margin-top: 2em;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.reset-grid {
+  grid-column-start: 1;
 }
