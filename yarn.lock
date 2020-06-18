@@ -6132,6 +6132,11 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-schemaorg@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-schemaorg/-/react-schemaorg-1.0.2.tgz#3ae275f8033084441ba48809e0f0d73590e7a6ac"
+  integrity sha512-V3+7QNOsKW5I8eaTxfpaFMVCnODcv42mg6t9n+R2Sc10nzaHqmSlIIMv5HgJ7mRw4UionHnHRL4z7Vs0YQmwlg==
+
 react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
@@ -6433,6 +6438,11 @@ scheduler@^0.19.1:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+schema-dts@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-0.6.0.tgz#1700eadcc384d39341e0f90ad15d708504124166"
+  integrity sha512-mYfPlwuIssnlBkqcwalddhJp23grXIlpI9sDBQuTzM46pftdzXGhbMMzwoszuWZHsH5Zki+LVDeMKjTPRWiAlw==
 
 schema-utils@2.6.6:
   version "2.6.6"

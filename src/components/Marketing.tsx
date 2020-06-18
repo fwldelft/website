@@ -1,5 +1,8 @@
 import React, { FunctionComponent } from "react"
+import { JsonLd } from "react-schemaorg"
+import type { Event } from "schema-dts"
 import styles from "../css/style.module.css"
+import EventPicture from "../img/46664f219655fbf5f1853111891cfc53.jpg"
 import { cx } from "../util/cx"
 
 export const NotificationScript: FunctionComponent = () => (
@@ -80,5 +83,38 @@ export const SiteIcons: FunctionComponent = () => (
       href="/favicon-16x16.png"
     />
     <link key="site-manifest" rel="manifest" href="/site.webmanifest" />
+  </>
+)
+
+export const EventSEO: FunctionComponent = () => (
+  <>
+    <JsonLd<Event>
+      item={{
+        "@context": "https://schema.org",
+        "@type": "Event",
+        name: "Falling Walls Lab Delft 2020",
+        startDate: "2020-09-23",
+        endDate: "2020-09-23",
+        previousStartDate: "2020-06-04",
+        eventStatus: [
+          "http://schema.org/EventRescheduled",
+          "http://schema.org/EventMovedOnline",
+        ],
+        eventAttendanceMode: "OnlineEventAttendanceMode",
+        location: {
+          "@type": "VirtualLocation",
+          url: "https://fwldelft.com",
+        },
+        description:
+          "The Falling Walls Lab is an interdisciplinary format to showcase the next generation of top researchers.",
+        image: [EventPicture],
+        offers: {
+          "@type": "Offer",
+          availability: "http://schema.org/InStock",
+          price: 0,
+          priceCurrency: "EUR",
+        },
+      }}
+    />
   </>
 )

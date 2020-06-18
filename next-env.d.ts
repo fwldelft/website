@@ -6,3 +6,8 @@ declare module "!@svgr/webpack!*.svg" {
   const SVG: FunctionComponent
   export default SVG
 }
+
+declare module "*.jpg" {
+  const url: string
+  export default url
+}
