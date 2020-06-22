@@ -1,12 +1,15 @@
 import React, { FunctionComponent } from "react"
 import { ApplyFaqSection } from "../components/ApplyFaqSection"
 import { DetailsSection } from "../components/DetailsSection"
+import { SocialMetadata } from "../components/Marketing"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
 
 export default (() => (
   <>
+    <SocialMetadata canonicalUrl="https://fwldelft.com/2020" />
+
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
         <h1>2020</h1>

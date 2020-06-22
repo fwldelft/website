@@ -6,6 +6,7 @@ import {
   AnalyticsScript,
   NotificationScript,
   SiteIcons,
+  SocialMetadata,
 } from "../components/Marketing"
 import { TopBar } from "../components/TopBar"
 import "../css/style.global.css"
@@ -24,6 +25,12 @@ export default (({ Component, pageProps }) => (
       <NotificationScript />
       <AnalyticsScript />
     </Head>
+    <SocialMetadata
+      title="Falling Walls Lab Delft 2020"
+      description="Get excited for the 2020 edition! The Falling Walls Lab is an interdisciplinary format to showcase the next generation of top researchers."
+      socialImageUrl="https://fwldelft.com/static/banner.jpg"
+      keywords="fwl, fwldelft, delft, ted, tedx, pitch, social, innovation, entrepreneur, contest, competition"
+    />
     <TopBar />
     <Component {...pageProps} />
     <Footer />

@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react"
+import { SocialMetadata } from "../components/Marketing"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
@@ -74,6 +75,12 @@ export const FactSection: FunctionComponent = () => (
 
 export default (() => (
   <>
+    <SocialMetadata
+      title="Falling Walls Lab Delft 2019"
+      description="Recap the 2019 edition! The Falling Walls Lab is an interdisciplinary format to showcase the next generation of top researchers."
+      canonicalUrl="https://fwldelft.com/2019"
+    />
+
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
         <h1>2019</h1>

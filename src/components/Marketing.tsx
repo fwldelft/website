@@ -1,3 +1,4 @@
+import Head from "next/head"
 import React, { FunctionComponent } from "react"
 import { JsonLd } from "react-schemaorg"
 import type { Event } from "schema-dts"
@@ -117,4 +118,73 @@ export const EventSEO: FunctionComponent = () => (
       }}
     />
   </>
+)
+
+export const SocialMetadata: FunctionComponent<{
+  title?: string
+  description?: string
+  canonicalUrl?: string
+  socialImageUrl?: string
+  keywords?: string
+}> = ({ title, description, canonicalUrl, socialImageUrl, keywords }) => (
+  <Head>
+    {title ? (
+      <React.Fragment key="title">
+        <title key="dom:title">{title}</title>
+        <meta key="meta:title" name="title" content={title} />
+        <meta key="og:title" property="og:title" content={title} />
+        <meta key="twitter:title" property="twitter:title" content={title} />
+      </React.Fragment>
+    ) : null}
+
+    {description ? (
+      <React.Fragment key="description">
+        <meta key="meta:title" name="description" content={description} />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={description}
+        />
+        <meta
+          key="twitter:description"
+          property="twitter:description"
+          content={description}
+        />
+      </React.Fragment>
+    ) : null}
+
+    {canonicalUrl ? (
+      <React.Fragment key="canonical-url">
+        <link key="link:canonical" rel="canonical" href={canonicalUrl} />
+        <meta key="og:url" property="og:url" content={canonicalUrl} />
+        <meta key="twitter:url" property="twitter:url" content={canonicalUrl} />
+      </React.Fragment>
+    ) : null}
+
+    {socialImageUrl ? (
+      <React.Fragment key="social-image">
+        <meta key="og:image" property="og:image" content={socialImageUrl} />
+        <meta
+          key="twitter:image"
+          property="twitter:image"
+          content={socialImageUrl}
+        />
+      </React.Fragment>
+    ) : null}
+
+    {keywords ? (
+      <React.Fragment key="keywords">
+        <meta key="meta:keywords" name="keywords" content={keywords} />
+      </React.Fragment>
+    ) : null}
+
+    <React.Fragment key="extra">
+      <meta key="og:type" property="og:type" content="website" />
+      <meta
+        key="twitter:card"
+        property="twitter:card"
+        content="summary_large_image"
+      />
+    </React.Fragment>
+  </Head>
 )
