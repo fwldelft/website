@@ -1,4 +1,3 @@
-import Head from "next/head"
 import React, { FunctionComponent } from "react"
 import { AboutSection } from "../components/AboutSection"
 import { ApplyFaqSection } from "../components/ApplyFaqSection"
@@ -10,9 +9,8 @@ import { TestimonialsSection } from "../components/TestimonialsSection"
 
 export default (() => (
   <>
-    <Head>
-      <EventSEO />
-    </Head>
+    <EventSEO />
+
     <HeroLanding />
     <AboutSection />
     <DetailsSection />

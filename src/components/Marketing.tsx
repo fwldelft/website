@@ -7,7 +7,7 @@ import EventPicture from "../img/46664f219655fbf5f1853111891cfc53.jpg"
 import { cx } from "../util/cx"
 
 export const NotificationScript: FunctionComponent = () => (
-  <>
+  <Head>
     <script
       key="notification-script"
       src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
@@ -27,7 +27,7 @@ export const NotificationScript: FunctionComponent = () => (
         `,
       }}
     />
-  </>
+  </Head>
 )
 
 export const NotificationPrompt: FunctionComponent = () => (
@@ -40,7 +40,7 @@ export const NotificationPrompt: FunctionComponent = () => (
 )
 
 export const AnalyticsScript: FunctionComponent = () => (
-  <>
+  <Head>
     <script
       key="analytics-script"
       src="https://www.googletagmanager.com/gtag/js?id=UA-159829690-1"
@@ -58,11 +58,11 @@ export const AnalyticsScript: FunctionComponent = () => (
         `,
       }}
     />
-  </>
+  </Head>
 )
 
 export const SiteIcons: FunctionComponent = () => (
-  <>
+  <Head>
     <link
       key="site-icon-apple"
       rel="apple-touch-icon"
@@ -84,12 +84,13 @@ export const SiteIcons: FunctionComponent = () => (
       href="/favicon-16x16.png"
     />
     <link key="site-manifest" rel="manifest" href="/site.webmanifest" />
-  </>
+  </Head>
 )
 
 export const EventSEO: FunctionComponent = () => (
-  <>
+  <Head>
     <JsonLd<Event>
+      key="event-linkeddata"
       item={{
         "@context": "https://schema.org",
         "@type": "Event",
@@ -117,7 +118,7 @@ export const EventSEO: FunctionComponent = () => (
         },
       }}
     />
-  </>
+  </Head>
 )
 
 export const SocialMetadata: FunctionComponent<{
