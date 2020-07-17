@@ -14,7 +14,8 @@
 
 body {
   margin: 0;
-  font-family: DINOT;
+  font-family: DINOT, sans-serif;
+  font-display: swap;
   color: var(--text-color);
   background: var(--background-color);
   display: flex;
