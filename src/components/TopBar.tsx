@@ -4,8 +4,6 @@ import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
 
-let i = 0
-
 export const TopBar: FunctionComponent = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   const toggleOpen = React.useCallback(() => {
