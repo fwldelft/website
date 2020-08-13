@@ -17,7 +17,7 @@ export default (() => (
         <h2>
           We're already preparing this year's event.
           <br />
-          Here you can get a small sneak peek.
+          Here you can get a sneak peek.
         </h2>
         <Countdown />
       </SectionContent>

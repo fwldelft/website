@@ -89,28 +89,16 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
     <div className={cx(styles["row"], styles["wrapped-content"])}>
       <Link href="/apply">
         <a>
-          <CountdownCell date={dates.application}>
-            Applications deadline
-            <br />
-            (for contestants)
-          </CountdownCell>
+          <CountdownCell date={dates.application}>Application</CountdownCell>
         </a>
       </Link>
       <Link href="/2020">
         <a>
-          <CountdownCell date={dates.event}>
-            Networking registration
-            <br />
-            (for audience)
-          </CountdownCell>
+          <CountdownCell date={dates.event}>Event</CountdownCell>
         </a>
       </Link>
       <a href="https://falling-walls.com/">
-        <CountdownCell date={dates.finale}>
-          Falling Walls Lab
-          <br />
-          Berlin Finale
-        </CountdownCell>
+        <CountdownCell date={dates.finale}>Berlin Finale</CountdownCell>
       </a>
     </div>
   </section>

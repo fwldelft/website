@@ -19,7 +19,7 @@ export const HeroLanding: FunctionComponent = () => (
         </p>
       </div>
       <div className={cx(styles["hero-section-date"])}>
-        <Link href="/apply">
+        <Link href="/2020">
           <a>
             <p>
               Online
