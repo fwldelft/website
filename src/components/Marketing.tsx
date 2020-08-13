@@ -99,8 +99,8 @@ export const EventSEO: FunctionComponent = () => (
         endDate: "2020-09-23",
         previousStartDate: "2020-06-04",
         eventStatus: [
-          "http://schema.org/EventRescheduled",
-          "http://schema.org/EventMovedOnline",
+          "https://schema.org/EventRescheduled",
+          "https://schema.org/EventMovedOnline",
         ],
         eventAttendanceMode: "OnlineEventAttendanceMode",
         location: {
@@ -112,7 +112,7 @@ export const EventSEO: FunctionComponent = () => (
         image: [EventPicture],
         offers: {
           "@type": "Offer",
-          availability: "http://schema.org/InStock",
+          availability: "https://schema.org/InStock",
           price: 0,
           priceCurrency: "EUR",
         },
