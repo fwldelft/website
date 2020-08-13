@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
+import dates from "../data/dates"
 import { cx } from "../util/cx"
+import { DateDescriptionView } from "./Date"
 
 const QA: FunctionComponent<{ title: string }> = ({ title, children }) => {
   const [closed, setClosed] = React.useState(false)
@@ -37,11 +39,11 @@ export const ApplyFaqSection: FunctionComponent = () => (
         <p>
           <b>
             The deadline to apply is{" "}
-            <time dateTime="2020-07-31">July 31st, 2020</time>
+            <DateDescriptionView date={dates.application} />
           </b>
           , and the competition will take place online on{" "}
           <b>
-            <time dateTime="2020-09-23">September 23rd, 2020</time>
+            <DateDescriptionView date={dates.event} />
           </b>
           .
         </p>

@@ -1,6 +1,8 @@
 import React from "react"
 import styles from "../css/style.module.css"
+import dates from "../data/dates"
 import { cx } from "../util/cx"
+import { DateDescriptionView } from "./Date"
 import { NotificationPrompt } from "./Marketing"
 
 export const DetailsSection = () => (
@@ -10,7 +12,8 @@ export const DetailsSection = () => (
         <h2>Now online!</h2>
         <p>
           With the 2020 edition, we're breaking the wall of social distance! The
-          Delft lab will take place completely online in September 2020.
+          Delft lab will take place completely online on{" "}
+          <DateDescriptionView date={dates.event} />.
         </p>
         <p>
           We're still finalizing the details of which platform to use; but rest

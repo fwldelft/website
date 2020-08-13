@@ -5,7 +5,9 @@ import PitchIcon from "!@svgr/webpack!../img/noun_presentation_2578417.svg"
 import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
+import dates from "../data/dates"
 import { cx } from "../util/cx"
+import { DateDescriptionView } from "./Date"
 
 export const AboutSection: FunctionComponent = () => (
   <section
@@ -28,8 +30,8 @@ export const AboutSection: FunctionComponent = () => (
           their research projects, business models and social initiatives with
           an interdisciplinary audience and jury. Academic institutions
           worldwide are invited to host their own Falling Walls Lab and to send
-          their winner/s to the Falling Walls Lab Finale on Nov 8th 2020 in
-          Berlin.
+          their winner/s to the Falling Walls Lab Finale on{" "}
+          <DateDescriptionView date={dates.finale} /> in Berlin.
         </p>
         <p>
           <Link href="/2020">

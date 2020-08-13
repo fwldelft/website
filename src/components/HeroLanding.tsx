@@ -1,7 +1,9 @@
 import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
+import dates from "../data/dates"
 import { cx } from "../util/cx"
+import { DateDescriptionView } from "./Date"
 
 export const HeroLanding: FunctionComponent = () => (
   <header className={cx(styles["section"], styles["hero-section"])}>
@@ -22,7 +24,7 @@ export const HeroLanding: FunctionComponent = () => (
             <p>
               Online
               <br />
-              <time dateTime="2002-09-23">Sep 23rd, 2020</time>
+              <DateDescriptionView date={dates.event} />
             </p>
           </a>
         </Link>

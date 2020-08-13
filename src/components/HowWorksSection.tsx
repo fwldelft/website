@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
+import dates from "../data/dates"
 import { cx } from "../util/cx"
+import { DateDescriptionView } from "./Date"
 
 export const HowWorksSection: FunctionComponent = () => (
   <section className={cx(styles["section"], styles["how-works-section"])}>
@@ -12,7 +14,7 @@ export const HowWorksSection: FunctionComponent = () => (
         <p>
           Apply for Delft Lab before{" "}
           <b>
-            <time dateTime="2020-07-31">July 31st, 2020</time>
+            <DateDescriptionView date={dates.application} />
           </b>
           .
         </p>
@@ -34,7 +36,7 @@ export const HowWorksSection: FunctionComponent = () => (
           If you are selected as one of the participants, we will invite you to
           Delft Lab on{" "}
           <b>
-            <time dateTime="2020-09-23">September 23rd, 2020</time>
+            <DateDescriptionView date={dates.event} />
           </b>
         </p>
       </div>
@@ -44,7 +46,7 @@ export const HowWorksSection: FunctionComponent = () => (
           The winner of the Delft round will get to join the Berlin edition and
           a chance to present the idea at Grand Finale on{" "}
           <b>
-            <time dateTime="2020-11-08">November, 8th 2020</time>
+            <DateDescriptionView date={dates.finale} />
           </b>
         </p>
       </div>
