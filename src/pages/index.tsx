@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react"
 import { AboutSection } from "../components/AboutSection"
 import { ApplyFaqSection } from "../components/ApplyFaqSection"
+import { Countdown } from "../components/Countdown"
 import { DetailsSection } from "../components/DetailsSection"
 import { HeroLanding } from "../components/HeroLanding"
 import { HowWorksSection } from "../components/HowWorksSection"
@@ -12,6 +13,7 @@ export default (() => (
     <EventSEO />
 
     <HeroLanding />
+    <Countdown />
     <AboutSection />
     <DetailsSection />
     <HowWorksSection />

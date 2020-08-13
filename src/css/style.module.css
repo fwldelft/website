@@ -274,6 +274,13 @@ footer .section {
   margin-bottom: 1em;
 }
 
+.countdown-section {
+  --background-color: var(--red-color);
+  --text-color: var(--white-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .blockquote {
   --background-color: var(--grey-color);
   --text-color: var(--black-color);

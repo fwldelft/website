@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react"
 import { ApplyFaqSection } from "../components/ApplyFaqSection"
+import { Countdown } from "../components/Countdown"
 import { DetailsSection } from "../components/DetailsSection"
 import { SocialMetadata } from "../components/Marketing"
 import { Section, SectionContent } from "../components/Section"
@@ -18,6 +19,7 @@ export default (() => (
           <br />
           Here you can get a small sneak peek.
         </h2>
+        <Countdown />
       </SectionContent>
     </Section>
 
