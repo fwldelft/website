@@ -27,5 +27,6 @@
   },
   "browserslist": [
     "supports css-variables and defaults"
-  ]
+  ],
+  "version": "2020.20.08"
 }
