@@ -48,6 +48,13 @@ export default (() => (
           description="Dr Rogier Verberk holds a PhD in experimental physics from Leiden University (2005). At TNO he worked on EUV lithography and became principal project manager. From 2013 on he helped to set up the QuTech research center for quantum technologies. Since 2016 he is Market Director at TNO, responsible for semiconductor equipment-, quantum-, Industry4.0- and Medical Technologies."
           link="https://www.linkedin.com/in/rogier-verberk-12ab02a/"
         />
+        <PersonBox
+          name="Stefania Milan"
+          image="/static/2020/jury/stefania.jpg"
+          subtitle="University of Amsterdam"
+          description="Stefania is Associate Professor of New Media and Digital Culture at the Department of Media Studies, University of Amsterdam. Her work explores the interplay between digital technology, activism and governance. She enjoys experimenting with digital and action-oriented research methods and finding ways to bridge research with policy and action."
+          link="https://www.stefaniamilan.net/"
+        />
         <PersonBox name="More to be unveiled!" />
 
         <h2>The sponsors</h2>
