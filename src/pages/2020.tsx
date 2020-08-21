@@ -29,7 +29,7 @@ export default (() => (
 
         <PersonBox
           name="Rushabh Chheda"
-          image="/static/2019/winners/rushabh.jpg"
+          image="/static/2020/jury/rushabh.jpg"
           subtitle="Conscious Designs"
           description="Rushabh Chheda is the founder of Conscious Designs, a Rotterdam-based startup that is working on an idea of using locally-sourced waste plastic to create affordable self-built housing for the low-incom communities in the developing world. Moreover, he was the winner of FWL Delft 2019 and finalist at the FWL Finale the same year; so he's uniquely in tune with how a pitcher is thinking."
           link="https://www.linkedin.com/in/rushabhschheda/"
