@@ -679,3 +679,8 @@ footer .section {
   --text-color: var(--white-color);
   --accent-color: var(--black-color);
 }
+
+.notification-prompt,
+.notification-prompt p {
+  text-align: center;
+}
