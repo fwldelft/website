@@ -649,3 +649,33 @@ footer .section {
     margin-bottom: 5em;
   }
 }
+
+.whypart-section .wrapped-content {
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.whypart-section a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.whypart-section h1 {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 1em;
+  grid-column: span 1;
+}
+
+.whypart-section h1.accent {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.prizes-section {
+  --background-color: var(--red-color);
+  --text-color: var(--white-color);
+  --accent-color: var(--black-color);
+}

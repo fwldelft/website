@@ -35,7 +35,12 @@ export const ApplyFaqSection: FunctionComponent = () => (
     <div className={cx(styles["grid"], styles["wrapped-content"])}>
       <div id="apply" className={cx(styles["faq-howto"])}>
         <h2>How to participate</h2>
-        <p>Follow these simple steps to submit your idea</p>
+        <p>Follow these simple steps to submit your idea.</p>
+        <p>
+          It could be a research project, a business model or a social
+          initiative, which is at the same time original and new, innovative and
+          relevant to the problems of the world today.
+        </p>
         <p>
           <b>
             The deadline to apply is{" "}
@@ -61,11 +66,8 @@ export const ApplyFaqSection: FunctionComponent = () => (
           <div className={cx(styles["faq-how-step-content"])}>
             <p>
               Briefly <b>describe your topic</b>: address the problem you want
-              to solve (200 characters), then offer your solution (200
-              characters). It could be a research project, a business model or a
-              social initiative, which is at the same time original and new,
-              innovative (overcoming old ideas and concepts) and relevant to the
-              problems of the world today.
+              to solve (200 characters), and offer your solution (200
+              characters).
             </p>
           </div>
         </div>

@@ -44,7 +44,7 @@ export const HowWorksSection: FunctionComponent = () => (
         <div className={cx(styles["how-works-step-number"])}>4</div>
         <p>
           The winner of the Delft round will get to join the Berlin edition and
-          a chance to present the idea at Grand Finale on{" "}
+          a chance to present the idea at the Grand Finale on{" "}
           <b>
             <DateDescriptionView date={dates.finale} />
           </b>

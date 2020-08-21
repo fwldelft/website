@@ -4,6 +4,7 @@ import styles from "../css/style.module.css"
 import dates, { DateDescription } from "../data/dates"
 import { cx } from "../util/cx"
 import { DateDescriptionView } from "./Date"
+import { NotificationPrompt } from "./Marketing"
 
 const CountdownCell: FunctionComponent<{ date: DateDescription }> = ({
   date,
@@ -82,24 +83,47 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
     )}
   >
     <style jsx>{`
-      a {
+      .countdowns a {
         text-decoration: none;
       }
+      p {
+        text-align: center;
+        margin: 0;
+        margin-top: 2em;
+        padding: 0;
+      }
     `}</style>
-    <div className={cx(styles["row"], styles["wrapped-content"])}>
-      <Link href="/apply">
-        <a>
-          <CountdownCell date={dates.application}>Application</CountdownCell>
+    <div className={cx(styles["column"], styles["wrapped-content"])}>
+      <div className={cx(styles["row"], "countdowns")}>
+        <Link href="/apply">
+          <a>
+            <CountdownCell date={dates.application}>Application</CountdownCell>
+          </a>
+        </Link>
+        <Link href="/2020">
+          <a>
+            <CountdownCell date={dates.event}>Event</CountdownCell>
+          </a>
+        </Link>
+        <a href="https://falling-walls.com/">
+          <CountdownCell date={dates.finale}>Berlin Finale</CountdownCell>
         </a>
-      </Link>
-      <Link href="/2020">
-        <a>
-          <CountdownCell date={dates.event}>Event</CountdownCell>
+      </div>
+      <p>
+        Add to your{" "}
+        <a href="https://calendar.google.com/calendar/b/1?cid=a204aDR1OGpocTh2NzRmaGdvdGE3NXVqM3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
+          Google Calendar
         </a>
-      </Link>
-      <a href="https://falling-walls.com/">
-        <CountdownCell date={dates.finale}>Berlin Finale</CountdownCell>
-      </a>
+        ,{" "}
+        <a href="webcal://calendar.google.com/calendar/ical/km8h4u8jhq8v74fhgota75uj3s%40group.calendar.google.com/public/basic.ics">
+          iCloud Calendar
+        </a>
+        , or{" "}
+        <a href="webcal://calendar.google.com/calendar/ical/km8h4u8jhq8v74fhgota75uj3s%40group.calendar.google.com/public/basic.ics">
+          other programs
+        </a>
+      </p>
+      <NotificationPrompt />
     </div>
   </section>
 )

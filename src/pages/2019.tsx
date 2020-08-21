@@ -1,44 +1,9 @@
 import React, { FunctionComponent } from "react"
 import { SocialMetadata } from "../components/Marketing"
+import { PersonBox } from "../components/PersonBox"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
-
-const PersonBox: FunctionComponent<{
-  name: string
-  image?: string
-  subtitle?: string
-  description?: string
-  link?: string
-  className?: string
-}> = ({ image, name, subtitle, link, description, className }) => (
-  <a className={className} href={link} title={`More information about ${name}`}>
-    <style jsx>{`
-      a {
-        text-decoration: none;
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-      h3,
-      .mini {
-        margin: 0;
-      }
-
-      .mini {
-        font-size: 0.8em;
-      }
-    `}</style>
-    <div>
-      {image ? <img src={image} alt={`Photo of ${name}`} /> : null}
-      <h3>{name}</h3>
-      {subtitle ? <p className="mini">{subtitle}</p> : null}
-      {description ? <p>{description}</p> : null}
-    </div>
-  </a>
-)
 
 const FactBox: FunctionComponent<{ n: string; qty: string }> = ({ n, qty }) => (
   <p>
@@ -260,13 +225,13 @@ export default (() => (
 
         <h2>Staff</h2>
         <PersonBox
-          image="/static/board-images/andrea.jpg"
+          image="/static/2019/board/andrea.jpg"
           name="Andrea Riccio"
           subtitle="Organizer"
           link="https://www.linkedin.com/in/andrea-riccio-9a180a136/"
         />
         <PersonBox
-          image="/static/board-images/tino.jpg"
+          image="/static/2019/board/tino.jpg"
           name="Tino Mager"
           subtitle="Organizer"
           link="https://www.linkedin.com/in/tino-mager-23083569/"
