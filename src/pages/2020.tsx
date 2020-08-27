@@ -64,6 +64,7 @@ export default (() => (
           image="/static/2020/sponsors/tno.jpg"
           subtitle="Main partner"
           description="TNO connects people and knowledge to create innovations that boost the competitive strength of industry and the wellbeing of society in a sustainable way."
+          link="https://www.tno.nl/"
         />
 
         <PersonBox
@@ -71,6 +72,7 @@ export default (() => (
           image="/static/2020/sponsors/stud.png"
           subtitle="Partner"
           description="Stud is a temporary employment agency in Delft for student, by students."
+          link="https://www.stud.nl/"
         />
 
         <h2>Participants</h2>
