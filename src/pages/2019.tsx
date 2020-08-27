@@ -160,7 +160,7 @@ export default (() => (
         <PersonBox
           name="Tino Mager"
           subtitle="TU Delft"
-          image="/static/board-images/tino.jpg"
+          image="/static/2019/board/tino.jpg"
           link="https://www.linkedin.com/in/tino-mager-23083569/"
         />
 
