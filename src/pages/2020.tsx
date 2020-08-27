@@ -66,6 +66,13 @@ export default (() => (
           description="TNO connects people and knowledge to create innovations that boost the competitive strength of industry and the wellbeing of society in a sustainable way."
         />
 
+        <PersonBox
+          name="Stud"
+          image="/static/2020/sponsors/stud.png"
+          subtitle="Partner"
+          description="Stud is a temporary employment agency in Delft for student, by students."
+        />
+
         <h2>Participants</h2>
 
         <PersonBox
