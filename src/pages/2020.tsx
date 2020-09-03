@@ -114,12 +114,6 @@ export default (() => (
           link="https://www.linkedin.com/in/robpozrub/"
           subtitle="Project manager"
         />
-        <PersonBox
-          image="/static/2020/board/tino.jpg"
-          name="Tino Mager"
-          subtitle="Public relations"
-          link="https://www.linkedin.com/in/tino-mager-23083569/"
-        />
       </SectionContent>
     </Section>
 
