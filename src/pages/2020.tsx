@@ -60,9 +60,15 @@ export default (() => (
           image="/static/2020/jury/gert.jpg"
           subtitle="Rabobank"
           description="Ir Gert Hans Berghuis has been working in innovation for over 20 years. After being a partner at strategic design agency Fabrique, he started working as a corporate innovation coach. Next to that, he is coaching startups and teaching about innovation at TU Delft. Since 2019, he is leading the Innovation Factory at Rabobank, working on future business models and innovations."
-          link="https://www.stefaniamilan.net/"
+          link="https://www.linkedin.com/in/gerthans/"
         />
-        <PersonBox name="More to be unveiled!" />
+        <PersonBox
+          name="Hester den Ruijter"
+          image="/static/2020/jury/hester.jpg"
+          subtitle="KNAW"
+          description="Hester den Ruijter works in the field of experimental cardiology. She focuses on research that bridges fundamental research and teh applicability of research for patients. She investigates the cause of the differences between men and women in the field of cardiovascular disease. The women in cardiology are central to her education and media campaigns."
+          link="https://www.umcutrecht.nl/nl/ziekenhuis/zorgverleners/ruijter-den-h"
+        />
 
         <h2>The sponsors</h2>
 
