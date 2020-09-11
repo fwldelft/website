@@ -111,7 +111,7 @@ export default (() => (
         />
         <PersonBox
           image="/static/2020/board/dario.jpg"
-          name="Dario van Wagensvald"
+          name="Dario van Wagensveld"
           link="https://www.linkedin.com/in/dario-van-wagensveld/"
           subtitle="Public relations"
         />
