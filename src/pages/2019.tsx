@@ -244,7 +244,7 @@ export default (() => (
           subtitle="Support"
         />
         <PersonBox
-          name="Dario van Wagensvald"
+          name="Dario van Wagensveld"
           link="https://www.linkedin.com/in/dario-van-wagensveld/"
           subtitle="Support"
         />
