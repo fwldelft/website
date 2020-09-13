@@ -56,7 +56,7 @@ export default (() => (
           link="https://www.stefaniamilan.net/"
         />
         <PersonBox
-          name="Gert Hans"
+          name="Gert Hans Berghuis"
           image="/static/2020/jury/gert.jpg"
           subtitle="Rabobank"
           description="Ir Gert Hans Berghuis has been working in innovation for over 20 years. After being a partner at strategic design agency Fabrique, he started working as a corporate innovation coach. Next to that, he is coaching startups and teaching about innovation at TU Delft. Since 2019, he is leading the Innovation Factory at Rabobank, working on future business models and innovations."
