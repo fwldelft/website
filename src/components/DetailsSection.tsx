@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "../css/style.module.css"
 import dates from "../data/dates"
+import { EVENTBRITE_LINK } from "../data/links"
 import { cx } from "../util/cx"
 import { DateDescriptionView } from "./Date"
 
@@ -15,14 +16,17 @@ export const DetailsSection = () => (
           <DateDescriptionView date={dates.event} />.
         </p>
         <p>
-          We're still finalizing the details of which platform to use; but rest
-          assured, you will be able to join from anywhere, watch the
-          presentations, and network with an interdisciplinary audience. Keep
-          your eyes peeled and follow us on our social media for timely info.
+          You will be able to join from anywhere, watch the presentations, and
+          network with an interdisciplinary audience. We will be using a
+          cutting-edge platform for networking and livestream to YouTube,
+          Facebook and LinkedIn. Keep your eyes peeled and follow us on our
+          social media for timely info.
         </p>
         <p>
+          <a href={EVENTBRITE_LINK}>Register for the event</a>
+          <br />
           <a href="https://instagram.com/fwldelft">Instagram</a> ·{" "}
-          <a href="https://www.facebook.com/FallingWallsLabDelft">Facebook</a>
+          <a href="https://www.facebook.com/events/242514487034716">Facebook</a>
         </p>
       </div>
     </div>

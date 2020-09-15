@@ -3,9 +3,37 @@ import { Countdown } from "../components/Countdown"
 import { SocialMetadata } from "../components/Marketing"
 import { PersonBox } from "../components/PersonBox"
 import { Section, SectionContent } from "../components/Section"
-import { WhyParticipate } from "../components/WhyParticipate"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+
+export const Sponsors2020: FunctionComponent<{ showDescription?: boolean }> = ({
+  showDescription = true,
+}) => (
+  <>
+    <PersonBox
+      name="TNO"
+      image="/static/2020/sponsors/tno.jpg"
+      subtitle="Main partner"
+      description={
+        showDescription
+          ? "TNO connects people and knowledge to create innovations that boost the competitive strength of industry and the wellbeing of society in a sustainable way."
+          : ""
+      }
+      link="https://www.tno.nl/"
+    />
+    <PersonBox
+      name="Stud"
+      image="/static/2020/sponsors/stud.png"
+      subtitle="Partner"
+      description={
+        showDescription
+          ? "Stud is a temporary employment agency in Delft for student, by students."
+          : ""
+      }
+      link="https://www.stud.nl/"
+    />
+  </>
+)
 
 export default (() => (
   <>
@@ -13,12 +41,7 @@ export default (() => (
 
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
-        <h1>2020</h1>
-        <h2>
-          We're already preparing this year's event.
-          <br />
-          Here you can get a sneak peek.
-        </h2>
+        <h1>Falling Walls Lab Delft 2020</h1>
         <Countdown />
       </SectionContent>
     </Section>
@@ -70,23 +93,8 @@ export default (() => (
           link="https://www.umcutrecht.nl/nl/ziekenhuis/zorgverleners/ruijter-den-h"
         />
 
-        <h2>The sponsors</h2>
-
-        <PersonBox
-          name="TNO"
-          image="/static/2020/sponsors/tno.jpg"
-          subtitle="Main partner"
-          description="TNO connects people and knowledge to create innovations that boost the competitive strength of industry and the wellbeing of society in a sustainable way."
-          link="https://www.tno.nl/"
-        />
-
-        <PersonBox
-          name="Stud"
-          image="/static/2020/sponsors/stud.png"
-          subtitle="Partner"
-          description="Stud is a temporary employment agency in Delft for student, by students."
-          link="https://www.stud.nl/"
-        />
+        <h2 id="sponsors">The sponsors</h2>
+        <Sponsors2020 />
 
         <h2>Participants</h2>
 
@@ -129,7 +137,5 @@ export default (() => (
         />
       </SectionContent>
     </Section>
-
-    <WhyParticipate />
   </>
 )) as FunctionComponent

@@ -1,7 +1,7 @@
-import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import dates, { DateDescription } from "../data/dates"
+import { EVENTBRITE_LINK } from "../data/links"
 import { cx } from "../util/cx"
 import { DateDescriptionView } from "./Date"
 import { NotificationPrompt } from "./Marketing"
@@ -92,37 +92,22 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
         margin-top: 2em;
         padding: 0;
       }
+      h1 {
+        text-align: center;
+      }
     `}</style>
     <div className={cx(styles["column"], styles["wrapped-content"])}>
+      <a href={EVENTBRITE_LINK}>
+        <h1>Register now! &rarr;</h1>
+      </a>
       <div className={cx(styles["row"], "countdowns")}>
-        <Link href="/apply">
-          <a>
-            <CountdownCell date={dates.application}>Application</CountdownCell>
-          </a>
-        </Link>
-        <Link href="/2020">
-          <a>
-            <CountdownCell date={dates.event}>Event</CountdownCell>
-          </a>
-        </Link>
+        <a href={EVENTBRITE_LINK}>
+          <CountdownCell date={dates.event}>Event</CountdownCell>
+        </a>
         <a href="https://falling-walls.com/">
           <CountdownCell date={dates.finale}>Berlin Finale</CountdownCell>
         </a>
       </div>
-      <p>
-        Add to your{" "}
-        <a href="https://calendar.google.com/calendar/b/1?cid=a204aDR1OGpocTh2NzRmaGdvdGE3NXVqM3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
-          Google Calendar
-        </a>
-        ,{" "}
-        <a href="webcal://calendar.google.com/calendar/ical/km8h4u8jhq8v74fhgota75uj3s%40group.calendar.google.com/public/basic.ics">
-          iCloud Calendar
-        </a>
-        , or{" "}
-        <a href="webcal://calendar.google.com/calendar/ical/km8h4u8jhq8v74fhgota75uj3s%40group.calendar.google.com/public/basic.ics">
-          other programs
-        </a>
-      </p>
       <NotificationPrompt />
     </div>
   </section>
