@@ -32,6 +32,17 @@ export const Sponsors2020: FunctionComponent<{ showDescription?: boolean }> = ({
       }
       link="https://www.stud.nl/"
     />
+    <PersonBox
+      name="Veertly"
+      image="/static/2020/sponsors/veertly.png"
+      subtitle="Partner"
+      description={
+        showDescription
+          ? "Veertly is an online platform which allows you to host your online events and networking sessions, creating authentic connections."
+          : ""
+      }
+      link="https://www.veertly.com/"
+    />
   </>
 )
 
