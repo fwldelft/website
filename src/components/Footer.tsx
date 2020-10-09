@@ -15,6 +15,9 @@ export const Footer: FunctionComponent = () => (
           <p>
             <a href="mailto:info@fwldelft.com">info@fwldelft.com</a>
           </p>
+          <p>
+            We are <a href="https://github.com/fwldelft/website">open source</a>.
+          </p>
         </div>
       </div>
     </section>
