@@ -1,9 +1,7 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
-import dates from "../data/dates"
 import { EVENTBRITE_LINK } from "../data/links"
 import { cx } from "../util/cx"
-import { DateDescriptionView } from "./Date"
 
 export const HeroLanding: FunctionComponent = () => (
   <header className={cx(styles["section"], styles["hero-section"])}>
@@ -20,11 +18,7 @@ export const HeroLanding: FunctionComponent = () => (
       </div>
       <div className={cx(styles["hero-section-date"])}>
         <a href={EVENTBRITE_LINK} title="Click to register">
-          <p>
-            Online
-            <br />
-            <DateDescriptionView date={dates.event} />
-          </p>
+          <p>We'll be back in 2021!</p>
         </a>
       </div>
     </div>

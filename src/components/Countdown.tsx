@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
-import dates, { DateDescription } from "../data/dates"
-import { EVENTBRITE_LINK } from "../data/links"
+import { DateDescription } from "../data/dates"
 import { cx } from "../util/cx"
 import { DateDescriptionView } from "./Date"
 import { NotificationPrompt } from "./Marketing"
@@ -97,17 +96,9 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
       }
     `}</style>
     <div className={cx(styles["column"], styles["wrapped-content"])}>
-      <a href={EVENTBRITE_LINK}>
-        <h1>Register now! &rarr;</h1>
-      </a>
-      <div className={cx(styles["row"], "countdowns")}>
-        <a href={EVENTBRITE_LINK}>
-          <CountdownCell date={dates.event}>Event</CountdownCell>
-        </a>
-        <a href="https://falling-walls.com/">
-          <CountdownCell date={dates.finale}>Berlin Finale</CountdownCell>
-        </a>
-      </div>
+      <h1>The 2020 edition already happened!</h1>
+      <h1>We'll see each other soon in 2021.</h1>
+
       <NotificationPrompt />
     </div>
   </section>

@@ -2,7 +2,6 @@ import MenuIcon from "!@svgr/webpack!../img/menu-24px.svg"
 import Link from "next/link"
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
-import { EVENTBRITE_LINK } from "../data/links"
 import { cx } from "../util/cx"
 
 export const TopBar: FunctionComponent = () => {
@@ -69,9 +68,8 @@ export const TopBar: FunctionComponent = () => {
           <a href="#contact">
             <li>Contact</li>
           </a>
-          <a href={EVENTBRITE_LINK}>
-            <li className={cx(styles["accent-button"])}>Attend</li>
-          </a>
+
+          <li className={cx(styles["accent-button"])}>Back in 2021!</li>
         </ul>
       </div>
     </nav>
