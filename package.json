@@ -22,9 +22,6 @@
     "react-schemaorg": "^1.2.0",
     "styled-jsx": "^3.3.0"
   },
-  "scripts": {
-    "build": "next build && next export"
-  },
   "browserslist": [
     "supports css-variables and defaults"
   ],
