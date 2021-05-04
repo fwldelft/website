@@ -53,7 +53,7 @@ export default (() => (
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
         <h1>Falling Walls Lab Delft 2020</h1>
-        {/* <Countdown /> */}
+        <Countdown />
       </SectionContent>
     </Section>
 

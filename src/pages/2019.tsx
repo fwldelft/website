@@ -50,7 +50,7 @@ export default (() => (
       <SectionContent>
         <h1>2019</h1>
         <h2>
-          We had an amazing lab last year.
+          Falling Walls Lab First Edition Delft
           <br />
           Check it out.
         </h2>

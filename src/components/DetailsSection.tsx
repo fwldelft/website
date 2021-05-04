@@ -9,11 +9,11 @@ export const DetailsSection = () => (
   <section className={cx(styles["section"], styles["details-section"])}>
     <div className={cx(styles["wrapped-content"], styles["grid"])}>
       <div className={cx(styles["details-content"])}>
-        <h2>Now online!</h2>
+        <h2>Now hybrid!</h2>
         <p>
-          With the 2020 edition, we're breaking the wall of social distance! The
-          Delft lab will take place completely online on{" "}
-          <DateDescriptionView date={dates.event} />.
+          With the 2020 edition, we broke the wall of social distance! The 2021
+          Delft lab will be the best of both worlds, following an in-person event in Delft with streaming on {" "}
+          <DateDescriptionView date={dates.event21} />.
         </p>
         <p>
           You will be able to join from anywhere, watch the presentations, and

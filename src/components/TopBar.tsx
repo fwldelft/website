@@ -69,7 +69,7 @@ export const TopBar: FunctionComponent = () => {
             <li>Contact</li>
           </a>
 
-          <li className={cx(styles["accent-button"])}>Back in 2021!</li>
+          <li className={cx(styles["accent-button"])}>We're back!</li>
         </ul>
       </div>
     </nav>

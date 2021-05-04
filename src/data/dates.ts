@@ -20,8 +20,24 @@ const dates = {
     name: "FWL Berlin Finale",
     localizedFallback: "Nov 8th, 2020",
   },
+  application21: {
+    date: new Date(2020, 8, 8, 23, 59, 59),
+    name: "Application deadline",
+    localizedFallback: "Sep 8th, 2021",
+  },
+  event21: {
+    date: new Date(2021, 8, 22, 3, 0, 0),
+    name: "FWL Delft 2021",
+    localizedFallback: "Sep 22nd, 2021",
+  },
+  finale21: {
+    date: new Date(2020, 10, 10),
+    name: "FWL Berlin Finale",
+    localizedFallback: "Nov 10th, 2021",
+  },
 }
 
 const typeTest: Record<string, DateDescription> = dates
 
 export default dates
+

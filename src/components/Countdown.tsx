@@ -96,8 +96,8 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
       }
     `}</style>
     <div className={cx(styles["column"], styles["wrapped-content"])}>
-      <h1>The 2020 edition already happened!</h1>
-      <h1>We'll see each other soon in 2021.</h1>
+      <h1>We are back with the Falling Walls Lab 2021 Edition</h1>
+      <h1>Stay Tuned!</h1>
 
       <NotificationPrompt />
     </div>
