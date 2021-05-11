@@ -5,6 +5,7 @@ import { PersonBox } from "../components/PersonBox"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+import { EVENTBRITE_LINK } from "../data/links"
 
 export const Sponsors2020: FunctionComponent<{ showDescription?: boolean }> = ({
   showDescription = true,
@@ -59,6 +60,61 @@ export default (() => (
 
     <Section>
       <SectionContent className={cx(styles["grid"], styles["recap"])}>
+        <h2>The event</h2>
+        <div className={cx(styles["full"])}>
+          <p>
+            On 23rd September, Falling Walls Lab Delft 2020 edition was held
+            showcasing 14 ideas of young innovators in front of an audience of
+            over 200 people and 6 high caliber jurors.
+          </p>
+          <p>
+            The present event was directed to a broad audience and aimed to
+            create a powerful network among innovators, companies, and local
+            innovative groups to give young innovators and entrepreneurs the
+            chance to reach a bigger audience and the opportunity to continue
+            developing their projects and achieve a bigger impact on society.
+            Strategic partnerships with leading companies and institutions were
+            taken such as TNO, KNAW, TUDelft, and Rabobank, which had a
+            representative person as part of the Jury.
+          </p>
+          <p>
+            The event involved three different rounds of pitches for a total of
+            14 participants. Networking sessions were also held in between the
+            pitches, during which the attendants, connected through an
+            innovative platform called Veertly, could interact with each other.
+            After a long and laborious jury discussion, Sofia Fonda was
+            announced as Winner of Falling Walls Lab Delft 2020 with her idea of
+            Breaking the Wall of Shame. The second position was assigned to Trey
+            Cranney and his idea of Breaking the Wall of Wildfire Firefighting
+            Technology. The two winners were selected to showcase their
+            innovative ideas further at the Falling Walls Remote Event.
+          </p>
+        </div>
+
+        <h2>The winners</h2>
+
+        <PersonBox
+          name="Sofia Fonda"
+          image="/static/2020/winners/winner_sofia.jpg"
+          subtitle="1st prize"
+          description="Breaking the Wall of Shame"
+          link="https://www.linkedin.com/in/sofiafonda/"
+        />
+        <PersonBox
+          name="Trey Cranney"
+          image="/static/2020/winners/winner_trey.png"
+          subtitle="2nd prize"
+          description="Breaking the Wall of Wildfire Firefighting Technology"
+          link="https://www.linkedin.com/in/trey-cranney-281233123/"
+        />
+        <PersonBox
+          name="Praveen Sridharan"
+          image="/static/2020/winners/winner_praveen.jpeg"
+          subtitle="3rd prize"
+          description="Breaking the Wall of Climate Change and Rooftop Solar"
+          link="https://www.linkedin.com/in/else-de-ridder-561573a0/"
+        />
+
         <h2 id="jury">The jury</h2>
 
         <PersonBox
@@ -107,13 +163,13 @@ export default (() => (
         <h2 id="sponsors">The sponsors</h2>
         <Sponsors2020 />
 
-        <h2>Participants</h2>
+        {/* <h2>Participants</h2>
 
         <PersonBox
           name="You!"
           description="Click here to apply"
           link="/apply"
-        />
+        /> */}
 
         <h2>Board</h2>
         <PersonBox
