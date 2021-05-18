@@ -96,7 +96,9 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
       }
     `}</style>
     <div className={cx(styles["column"], styles["wrapped-content"])}>
-      <h1>We are back with the Falling Walls Lab 2021 Edition</h1>
+      <h1>
+        Falling Walls Lab 2021 Edition is happening on September 22, 2021{" "}
+      </h1>
       <h1>Stay Tuned!</h1>
 
       <NotificationPrompt />

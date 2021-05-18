@@ -59,6 +59,16 @@ export default (() => (
     </Section>
 
     <Section>
+      <iframe
+        style={{ width: "100vw", height: "80vh" }}
+        src="https://www.youtube.com/embed/8VZyN9yIIYY"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </Section>
+
+    <Section>
       <SectionContent className={cx(styles["grid"], styles["recap"])}>
         <h2>The event</h2>
         <div className={cx(styles["full"])}>
@@ -95,7 +105,7 @@ export default (() => (
 
         <PersonBox
           name="Sofia Fonda"
-          image="/static/2020/winners/winner_sofia.jpg"
+          image="/static/2020/winners/IMG_5885.jpg"
           subtitle="1st prize"
           description="Breaking the Wall of Shame"
           link="https://www.linkedin.com/in/sofiafonda/"
@@ -112,7 +122,7 @@ export default (() => (
           image="/static/2020/winners/winner_praveen.jpeg"
           subtitle="3rd prize"
           description="Breaking the Wall of Climate Change and Rooftop Solar"
-          link="https://www.linkedin.com/in/else-de-ridder-561573a0/"
+          link="https://www.linkedin.com/in/praveen-sridharan-0951b8b1/"
         />
 
         <h2 id="jury">The jury</h2>
