@@ -105,7 +105,7 @@ export default (() => (
 
         <PersonBox
           name="Sofia Fonda"
-          image="/static/2020/winners/IMG_5885.jpg"
+          image="/static/2020/winners/sofia.png"
           subtitle="1st prize"
           description="Breaking the Wall of Shame"
           link="https://www.linkedin.com/in/sofiafonda/"
