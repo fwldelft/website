@@ -49,11 +49,7 @@ export default (() => (
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
         <h1>2019</h1>
-        <h2>
-          Falling Walls Lab First Edition Delft
-          <br />
-          Check it out.
-        </h2>
+        <h2>Falling Walls Lab First Edition Delft</h2>
       </SectionContent>
     </Section>
 

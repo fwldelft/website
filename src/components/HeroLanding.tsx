@@ -17,9 +17,9 @@ export const HeroLanding: FunctionComponent = () => (
         </p>
       </div>
       <div className={cx(styles["hero-section-date"])}>
-        <a href={EVENTBRITE_LINK} title="Click to register">
-          <p>We're back! #FWL2021</p>
-        </a>
+        {/* <a href={EVENTBRITE_LINK} title="Click to register"> */}
+        <p>We're back! #FWL2021</p>
+        {/* </a> */}
       </div>
     </div>
   </header>

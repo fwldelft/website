@@ -47,16 +47,52 @@ export const Sponsors2020: FunctionComponent<{ showDescription?: boolean }> = ({
   </>
 )
 
+const FactBox: FunctionComponent<{ n: string; qty: string }> = ({ n, qty }) => (
+  <p>
+    <style jsx>{`
+      p {
+        text-align: center;
+      }
+      span {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .important-number {
+        color: var(--accent-color);
+        font-weight: bold;
+        font-size: 3em;
+      }
+    `}</style>
+    <span className="important-number">{n}</span>
+    <span>{qty}</span>
+  </p>
+)
+
+export const FactSection: FunctionComponent = () => (
+  <Section className={cx(styles["no-min"])}>
+    <SectionContent className={cx(styles["grid"])}>
+      <FactBox n="130+" qty="event attendees" />
+      <FactBox n="6" qty="high-caliber jury members" />
+      <FactBox n="14" qty="groundbreaking ideas" />
+      <FactBox n="2" qty="winners flying to berlin" />
+    </SectionContent>
+  </Section>
+)
+
 export default (() => (
   <>
     <SocialMetadata canonicalUrl="https://fwldelft.com/2020" />
 
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
-        <h1>Falling Walls Lab Delft 2020</h1>
+        <h1>2020</h1>
+        <h2>Falling Walls Lab Second Edition Delft</h2>
         {/* <Countdown /> */}
       </SectionContent>
     </Section>
+
+    <FactSection />
 
     <Section>
       <iframe
@@ -105,7 +141,7 @@ export default (() => (
 
         <PersonBox
           name="Sofia Fonda"
-          image="/static/2020/winners/sofia.png"
+          image="/static/2020/winners/sofia_255.jpg"
           subtitle="1st prize"
           description="Breaking the Wall of Shame"
           link="https://www.linkedin.com/in/sofiafonda/"
