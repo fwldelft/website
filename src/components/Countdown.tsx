@@ -4,6 +4,9 @@ import { DateDescription } from "../data/dates"
 import { cx } from "../util/cx"
 import { DateDescriptionView } from "./Date"
 import { NotificationPrompt } from "./Marketing"
+import { EVENTBRITE_LINK } from "../data/links"
+import { FWL_OPEN_CALL } from "../data/links"
+import { WORKSHOP_1_LINK } from "../data/links"
 
 const CountdownCell: FunctionComponent<{ date: DateDescription }> = ({
   date,
@@ -99,7 +102,17 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
       <h1>
         Falling Walls Lab 2021 Edition is happening on September 22, 2021{" "}
       </h1>
-      <h1>Stay Tuned!</h1>
+      <h3>
+        <a href={FWL_OPEN_CALL} title="Click to apply">
+          <p>Apply as a Participant</p>
+        </a>
+        <a href={EVENTBRITE_LINK} title="Click to register">
+          <p>Register for the Event</p>
+        </a>
+        <a href={WORKSHOP_1_LINK} title="Click to register for workshop">
+          <p>Participate in our Workshop</p>
+        </a>
+      </h3>
 
       <NotificationPrompt />
     </div>

@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from "react"
 import styles from "../css/style.module.css"
 import { EVENTBRITE_LINK } from "../data/links"
+import { FWL_OPEN_CALL } from "../data/links"
+
 import { cx } from "../util/cx"
 
 export const HeroLanding: FunctionComponent = () => (
@@ -17,9 +19,9 @@ export const HeroLanding: FunctionComponent = () => (
         </p>
       </div>
       <div className={cx(styles["hero-section-date"])}>
-        {/* <a href={EVENTBRITE_LINK} title="Click to register"> */}
-        <p>We're back! #FWL2021</p>
-        {/* </a> */}
+        <a href={FWL_OPEN_CALL} title="Click to register">
+          <p>Apply Now!</p>
+        </a>
       </div>
     </div>
   </header>
