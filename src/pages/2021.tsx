@@ -35,7 +35,7 @@ export const Sponsors2021: FunctionComponent<{ showDescription?: boolean }> = ({
     />
     <PersonBox
       name="Fast"
-      image="/static/2021/sponsors/fast_ratio.png"
+      image="/static/2021/sponsors/fast_ratio.PNG"
       subtitle="Partner"
       description={
         showDescription
@@ -46,7 +46,7 @@ export const Sponsors2021: FunctionComponent<{ showDescription?: boolean }> = ({
     />
     <PersonBox
       name="TuDelft"
-      image="/static/2021/sponsors/tudelft_ratio.png"
+      image="/static/2021/sponsors/tudelft_ratio.PNG"
       subtitle="Partner"
       description={
         showDescription
@@ -143,7 +143,7 @@ export default (() => (
 
         <PersonBox
           name="Erik Zoutman"
-          image="/static/2021/jury/erik.jpg"
+          image="/static/2021/jury/Erik.jpg"
           subtitle="Science [&] Technology"
           description="Erik holds a Master’s degree in Electrical Engineering from the University of Twente in the Netherlands. He started his career in the Dutch space industry at TNO in Delft where he was involved in building remote sensing instruments. In 2000 he co-founded the company Science and Technology Corp. and was CEO until 2018. Today he brings technology to the market as investor and incubator for several early stage technology companies.
           "
