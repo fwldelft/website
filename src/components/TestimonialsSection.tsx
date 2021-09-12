@@ -34,6 +34,34 @@ export const TestimonialsSection: FunctionComponent = () => (
             <a>Review the 2019 edition →</a>
           </Link>
         </p>
+        <blockquote className={cx(styles["blockquote"])}>
+          <div className={cx(styles["quote"])}>
+            <p>
+              <b>Breaking the wall of shame</b>
+            </p>
+            <p>
+              Sofia Fonda won first place at the Falling Walls Lab 2020 edition
+              with her pitch on gender equality and menstruation normalisation
+              through the very simple yet innovative solution to change the
+              interactions public toilets for menstrual cup users.
+            </p>
+          </div>
+          <footer className={cx(styles["row"])}>
+            <div className={cx(styles["quote-portrait"], styles["sofia"])} />
+            <div>
+              <p>
+                <b>Sofia Fonda</b>
+                <br />
+                Winner FWL Delft 2020
+              </p>
+            </div>
+          </footer>
+        </blockquote>
+        <p>
+          <Link href="/2020">
+            <a>Review the 2020 edition →</a>
+          </Link>
+        </p>
       </div>
     </div>
     <div className={cx(styles["background"])} />

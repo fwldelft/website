@@ -5,8 +5,9 @@ import { PersonBox } from "../components/PersonBox"
 import { Section, SectionContent } from "../components/Section"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
+import { EVENTBRITE_LINK } from "../data/links"
 
-export const Sponsors2020: FunctionComponent<{ showDescription?: boolean }> = ({
+export const Sponsors2021: FunctionComponent<{ showDescription?: boolean }> = ({
   showDescription = true,
 }) => (
   <>
@@ -33,47 +34,128 @@ export const Sponsors2020: FunctionComponent<{ showDescription?: boolean }> = ({
       link="https://www.stud.nl/"
     />
     <PersonBox
-      name="Veertly"
-      image="/static/2020/sponsors/veertly.png"
+      name="Fast"
+      image="/static/2021/sponsors/fast_ratio.png"
       subtitle="Partner"
       description={
         showDescription
-          ? "Veertly is an online platform which allows you to host your online events and networking sessions, creating authentic connections."
+          ? "Funding Ambitious Students TU Delft (FAST) is the student committee of Delft University Fund."
           : ""
       }
-      link="https://www.veertly.com/"
+      link="https://www.tudelft.nl/fast"
+    />
+    <PersonBox
+      name="TuDelft"
+      image="/static/2021/sponsors/tudelft_ratio.png"
+      subtitle="Partner"
+      description={
+        showDescription
+          ? "TU Delft is the oldest and largest Dutch public technical university, ranked consistently as one of the best universities in the Netherlands"
+          : ""
+      }
+      link="https://www.tudelft.nl"
+    />
+    <PersonBox
+      name="ST"
+      image="/static/2021/sponsors/stcorp.png"
+      subtitle="Partner"
+      description={
+        showDescription
+          ? "Science [&] Technology created technology to make the world a better place by conducting high-tec projects, services and consultancy."
+          : ""
+      }
+      link="https://www.stcorp.nl/"
     />
   </>
 )
 
+const FactBox: FunctionComponent<{ n: string; qty: string }> = ({ n, qty }) => (
+  <p>
+    <style jsx>{`
+      p {
+        text-align: center;
+      }
+      span {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .important-number {
+        color: var(--accent-color);
+        font-weight: bold;
+        font-size: 3em;
+      }
+    `}</style>
+    <span className="important-number">{n}</span>
+    <span>{qty}</span>
+  </p>
+)
+
+export const FactSection: FunctionComponent = () => (
+  <Section className={cx(styles["no-min"])}>
+    <SectionContent className={cx(styles["grid"])}>
+      {/* <FactBox n="130+" qty="event attendees" /> */}
+      <FactBox n="6" qty="high-caliber jury members" />
+      <FactBox n="20+" qty="groundbreaking ideas" />
+      <FactBox n="1" qty="winner flying to Berlin" />
+    </SectionContent>
+  </Section>
+)
+
 export default (() => (
   <>
-    <SocialMetadata canonicalUrl="https://fwldelft.com/2020" />
+    <SocialMetadata canonicalUrl="https://fwldelft.com/2021" />
 
     <Section className={cx(styles["dry-cover"])}>
       <SectionContent>
-        <h1>Falling Walls Lab Delft 2020</h1>
-        <Countdown />
+        <h1>2021</h1>
+        <h2>Falling Walls Lab Third Edition Delft</h2>
+        {/* <Countdown /> */}
       </SectionContent>
     </Section>
 
+    <FactSection />
+
+    {/* <Section>
+      <iframe
+        style={{ width: "100vw", height: "80vh" }}
+        src="https://www.youtube.com/embed/8VZyN9yIIYY"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </Section> */}
+
     <Section>
       <SectionContent className={cx(styles["grid"], styles["recap"])}>
+        <h2>The event</h2>
+        <div className={cx(styles["full"])}>
+          <p>
+            The countdown begins as on 22nd September, the third edition of
+            Falling Walls Lab Delft will take place even bigger and bolder then
+            before. With over 20+ bright ideas of young innovators in front of a
+            global audience and 6 esteemed jury members from academia and
+            industry.
+          </p>
+        </div>
+
         <h2 id="jury">The jury</h2>
 
         <PersonBox
-          name="Rushabh Chheda"
-          image="/static/2020/jury/rushabh.jpg"
-          subtitle="Conscious Designs"
-          description="Rushabh Chheda is the founder of Conscious Designs, a Rotterdam-based startup that is working on an idea of using locally-sourced waste plastic to create affordable self-built housing for the low-incom communities in the developing world. Moreover, he was the winner of FWL Delft 2019 and finalist at the FWL Finale the same year; so he's uniquely in tune with how a pitcher is thinking."
-          link="https://www.linkedin.com/in/rushabhschheda/"
+          name="Erik Zoutman"
+          image="/static/2021/jury/erik.jpg"
+          subtitle="Science [&] Technology"
+          description="Erik holds a Master’s degree in Electrical Engineering from the University of Twente in the Netherlands. He started his career in the Dutch space industry at TNO in Delft where he was involved in building remote sensing instruments. In 2000 he co-founded the company Science and Technology Corp. and was CEO until 2018. Today he brings technology to the market as investor and incubator for several early stage technology companies.
+          "
+          link="https://nl.linkedin.com/in/zoutman"
         />
         <PersonBox
-          name="Ina Dijstelbloem"
-          image="/static/2020/jury/ina.jpg"
-          subtitle="TU Delft"
-          description="Ina is specialized in international marketing/communications. She is responsible for the international recruitment of master students at TU Delft and is always focused on how to convey a message to people world-wide. She will focus on the communication side of the pitches: message, supporting tools/visuals, passion, leadership, and connection with the viewers."
-          link="https://www.linkedin.com/in/inadijstelbloem/"
+          name="Helma van den Berg-van Rijn"
+          image="/static/2021/jury/Helma.jpg"
+          subtitle="Muzus"
+          description="Dr. Ir. Helma van den Berg-van Rijn (1982) is social designer at Muzus, a service design agency for societal matters. Helma has a passion for design solutions with a positive impact on society and make the world a better place for all people. During her PhD ‘Meaningful Encounters’, she explored how designers can learn from direct contact with difficult-to-reach user groups as children with autism and people with dementia (TU Delft, 2012).
+          "
+          link="https://www.linkedin.com/in/helmavanrijn/?originalSubdomain=nl"
         />
         <PersonBox
           name="Rogier Verberk"
@@ -83,37 +165,39 @@ export default (() => (
           link="https://www.linkedin.com/in/rogier-verberk-12ab02a/"
         />
         <PersonBox
-          name="Stefania Milan"
-          image="/static/2020/jury/stefania.jpg"
-          subtitle="University of Amsterdam"
-          description="Stefania is Associate Professor of New Media and Digital Culture at the Department of Media Studies, University of Amsterdam. Her work explores the interplay between digital technology, activism and governance. She enjoys experimenting with digital and action-oriented research methods and finding ways to bridge research with policy and action."
-          link="https://www.stefaniamilan.net/"
+          name="Irene Rompa"
+          image="/static/2021/jury/IreneRompa.jpeg"
+          subtitle="Quantum Delta NL"
+          description="Irene Rompa studied psychology but started her career expanding a reusable water bottle startup from the Netherlands to the United States. A campaigner for sustainability and doing good at heart, she’s initiated all kinds of projects and worked in the Dutch startup scene in several roles. Last year she joined Quantum Delta NL, a national program for the development of quantum technology in the Netherlands, as its Head of Communication.
+          "
+          link="https://nl.linkedin.com/in/irenerompa"
         />
         <PersonBox
-          name="Gert Hans Berghuis"
-          image="/static/2020/jury/gert.jpg"
-          subtitle="Rabobank"
-          description="Ir Gert Hans Berghuis has been working in innovation for over 20 years. After being a partner at strategic design agency Fabrique, he started working as a corporate innovation coach. Next to that, he is coaching startups and teaching about innovation at TU Delft. Since 2019, he is leading the Innovation Factory at Rabobank, working on future business models and innovations."
-          link="https://www.linkedin.com/in/gerthans/"
+          name="Sofia Fonda"
+          image="/static/2020/winners/sofia_255.jpg"
+          subtitle="TU Delft"
+          description="Winner of FWL Delft 2020, Sofia Fonda is a fresh graduate in Design for Interaction, currently working as a Research Assistant at TU Delft. Last year she convinced the jury with her project Breaking the Wall of Shame, allowing women to clean their menstrual cup in public toilets. Her ambition is to use design to break stigmas around sexuality and mental healh and promote well-being.
+          "
+          link="https://nl.linkedin.com/in/sofiafonda"
         />
         <PersonBox
-          name="Hester den Ruijter"
-          image="/static/2020/jury/hester.jpg"
-          subtitle="KNAW"
-          description="Hester den Ruijter works in the field of experimental cardiology. She focuses on research that bridges fundamental research and teh applicability of research for patients. She investigates the cause of the differences between men and women in the field of cardiovascular disease. The women in cardiology are central to her education and media campaigns."
-          link="https://www.umcutrecht.nl/nl/ziekenhuis/zorgverleners/ruijter-den-h"
+          name="Thijs Maartens          "
+          image="/static/2021/jury/thijs.png"
+          subtitle="Philips"
+          description="Thijs in his current role at Philips Engineering Solutions, along with his team work to activate and execute prioritized cross functional projects that will help organizations reach their sustainability and circular economy goals, including developing custom methodologies to ensure appropriate resourcing, prioritization, and activation of sustainability strategies and roadmaps."
+          link="https://www.linkedin.com/in/thijsmaartens/?originalSubdomain=nl"
         />
 
         <h2 id="sponsors">The sponsors</h2>
-        <Sponsors2020 />
+        <Sponsors2021 />
 
-        <h2>Participants</h2>
+        {/* <h2>Participants</h2>
 
         <PersonBox
           name="You!"
           description="Click here to apply"
           link="/apply"
-        />
+        /> */}
 
         <h2>Board</h2>
         <PersonBox

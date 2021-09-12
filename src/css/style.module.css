@@ -339,6 +339,10 @@ footer .section {
   background-image: url("../img/02309c65f4f85225bd88ca53af305b40.jpg");
 }
 
+.sofia {
+  background-image: url("/static/2020/winners/sofia_255.jpg");
+}
+
 .faq-section {
   --background-color: var(--grey-color);
   --text-color: var(--black-color);

@@ -9,6 +9,7 @@ import { TestimonialsSection } from "../components/TestimonialsSection"
 import styles from "../css/style.module.css"
 import { cx } from "../util/cx"
 import { Sponsors2020 } from "./2020"
+import { Sponsors2021 } from "./2021"
 
 export default (() => (
   <>
@@ -20,7 +21,7 @@ export default (() => (
 
     <Section className={cx(styles["no-min"])}>
       <SectionContent className={cx(styles["grid"], styles["recap"])}>
-        <Sponsors2020 showDescription={false} />
+        <Sponsors2021 showDescription={false} />
       </SectionContent>
     </Section>
 

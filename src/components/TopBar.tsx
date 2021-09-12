@@ -50,6 +50,11 @@ export const TopBar: FunctionComponent = () => {
         </label>
 
         <ul className={cx(styles["nav-links"])} onClick={close}>
+          <Link href="/2021">
+            <a>
+              <li>2021 Edition</li>
+            </a>
+          </Link>
           <Link href="/2020">
             <a>
               <li>2020 Edition</li>

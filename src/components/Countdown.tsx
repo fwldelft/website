@@ -103,15 +103,12 @@ export const Countdown: FunctionComponent<{}> = ({}) => (
         Falling Walls Lab 2021 Edition is happening on September 22, 2021{" "}
       </h1>
       <h3>
-        <a href={FWL_OPEN_CALL} title="Click to apply">
-          <p>Apply as a Participant</p>
-        </a>
         <a href={EVENTBRITE_LINK} title="Click to register">
           <p>Register for the Event</p>
         </a>
-        <a href={WORKSHOP_1_LINK} title="Click to register for workshop">
+        {/* <a href={WORKSHOP_1_LINK} title="Click to register for workshop">
           <p>Participate in our Workshop</p>
-        </a>
+        </a> */}
       </h3>
 
       <NotificationPrompt />
